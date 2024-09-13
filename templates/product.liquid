@@ -63,9 +63,7 @@
                   <div class="product-price">
                     <h4 data-commerce-type="variation-price" looop="price" class="h3-heading">{{ product.price | money_with_currency }}</h4>
                   </div>
-                  <div class="code-embed-3 w-embed w-script"><!-- MONTO REVIEWS -->
-<script src="https://www.monto.io/widget.js" data-shop-id="zWlDgXpd0oGlPbxykM56nwem" data-reviewable-id="{{ product.handle }}" data-widget-type="stars"></script>
-<!-- END MONTO REVIEWS --></div>
+                  <div class="code-embed-3 w-embed"><div class="klaviyo-star-rating-widget" data-id="{{product.id}}" data-product-title="{{product.title}}" data-product-type="{{product.type}}"></div></div>
                 </div>
               </div>
               <div class="product-info-block afterpay-box">
