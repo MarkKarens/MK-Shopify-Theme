@@ -24,9 +24,9 @@
         "settings": {
           "link_the_addison": "",
           "link_the_bellamere": "",
-          "url_1": "",
+          "url_1": "shopify:\/\/products\/addison-1",
           "url_1_text": "The Addison",
-          "url_2": "",
+          "url_2": "shopify:\/\/products\/bellamere",
           "url_2_text": "The Bellamere",
           "url_3": "",
           "url_3_text": "About Us",
@@ -165,6 +165,13 @@
           "footer_link_3_text": "The Bellamere",
           "footer_link_4": "",
           "footer_link_4_text": "All Products"
+        }
+      },
+      "product-feature": {
+        "type": "product-feature",
+        "settings": {
+          "feature_1": "Customizable",
+          "feature_2": "Made to Order"
         }
       }
     },
