@@ -1,0 +1,41 @@
+
+        <div class="div-block-13">
+          <div class="w-layout-grid sysf-hero-grid engraving-grid">
+            <div id="w-node-_41a24cf2-21ca-3a20-9402-0215497c1f1a-497c1f17" class="sysf-text-wrapper-l engraving-text-wrapper">
+              <div class="sysf-tagline-3 tagline-dew">{{ section.settings.engraving_tagline }}</div>
+              <h4 class="sysf-heading sysf-xl">{{ section.settings.engraving_title }}</h4>
+              <p class="sysf-body-text sysf-m">{{ section.settings.engraving_p | newline_to_br }}</p>
+            </div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("li-section","features 2");currentSection.setAttribute("class","feature-section finshes-section");</script>
+        
+{% schema %}
+{
+  "name": "feature section 2",
+  "tag": "div",
+  "class": "feature-section finshes-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "engraving_tagline",
+      "label": "engraving tagline",
+      "default": "Coming Soon"
+    },
+    {
+      "type": "text",
+      "id": "engraving_title",
+      "label": "engraving title",
+      "default": "Custom name engraving"
+    },
+    {
+      "type": "textarea",
+      "id": "engraving_p",
+      "label": "engraving p",
+      "default": "Personalize your pets home with a unique laser engraved nameplate."
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,34 @@
+{% capture listItems %}
+{% paginate collections.all.products by 999 %}
+{%- assign allItems = collections.all.products -%}{%- assign allItems = allItems | sort: 'title' -%}
+{%- for item in allItems  -%}
+                <div role="listitem" class="collections-item w-dyn-item w-col w-col-4">
+              <div id="w-node-d265bb3f-756d-b742-226b-b5cf0d0cb761-23c86426" class="w-layout-layout wf-layout-layout">
+                <div class="w-layout-cell">
+                  <div class="div-block-28" style="background-image: url('{{item.featured_image | img_url: 'master'}}')" data-commerce-type="variation-image"></div>
+                </div>
+                <div class="w-layout-cell cell">
+                  <div id="w-node-_80e409e3-8c49-ec02-d2dd-81dbae4bfaf3-23c86426" class="product6-content-wrap">
+                    <div class="product6-description-wrap">
+                      <div class="size1-text">{{ item.metafields.udesly['selling-point'] }}</div>
+                      <div class="paragraph-71">{{ item.metafields.udesly['description'] }}</div>
+                    </div>
+                    <a href="{{ item.url }}" class="collections-item-name">{{ item.title }}</a>
+                    <div data-commerce-type="variation-price" class="paragraph-72">{{ item.price | money_with_currency }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+{%- endfor -%}
+{% endpaginate %}
+{% endcapture %}
+{% assign items_length = listItems | strip | size %}
+
+<div class="w-dyn-list" udy-collection="product">
+          {%- unless items_length == 0 -%}<div role="list" class="collections w-dyn-items w-row">
+            {{ listItems }}
+          </div>{%- endunless -%}
+          {%- if items_length == 0 -%}<div class="w-dyn-empty">
+            <div>No items found.</div>
+          </div>{%- endif -%}
+        </div>

@@ -1,0 +1,42 @@
+<section li-section="Newsletter" class="section-cta-2">
+        <div class="cta-block">
+          <div class="container-small-4">
+            <div class="title-wrapper-xs-2">
+              <div class="wrap-v-x-small align-c">
+                <div class="overline">{{ 't1eafdd4a' | t }}</div>
+                <h2 class="h1-heading-4">{{ 'tn55135a8e' | t }}</h2>
+              </div>
+              <p class="subheading-2">{{ 't5a4935b8' | t }}</p>
+            </div>
+            <div class="wrap-v-x-large-2 align-c">
+              <div class="cta-form-block-3 w-form">
+                {%- form "customer",  class: "form-h" -%}<input type="hidden" name="contact[tags]" value="newsletter"><input class="text-field-round-2 email-cta-field w-input" maxlength="256" name="contact[email]" data-name="Email 2" placeholder="{{ 't5eba27d7' | t }}" type="email" id="email-2" required="">
+                  <a href="#" class="email-form-btn w-inline-block">
+                    <div class="items-pro_buttons-wrap-2">
+                      <div class="button-data_row-3">
+                        <div class="button-data_content"><button data-w-id="dc915875-162a-6dab-6114-18a61cf81542" class="button-block-32 is--dark">
+                            <div class="button-text-32-icon alt w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- !Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                <path fill="#685043" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path>
+                              </svg></div>
+                            <div class="button-text-block-32">
+                              <div class="button-text-32">{{ 't23514a' | t }}</div>
+                            </div>
+                          </button></div>
+                      </div>
+                    </div>
+                  </a>
+                {%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}{%- endform -%}
+                <div class="success-message-10 w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
+                  <div class="text-block-36">{{ 't5a0ea5a1' | t }}</div>
+                </div>
+                {%- unless form_success -%}<div class="error-message-8 w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
+                  <div class="text-block-37">{%- render "form-errors", form_errors: form_errors -%}</div>
+                </div>{%- endunless -%}
+              </div>
+              <div class="footnote-wrapper">
+                <div class="footnote">{{ 'tn1d1ef821' | t }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,140 @@
+
+        <div class="div-block-13">
+          <div class="w-layout-grid sysf-hero-grid stains-grid">
+            <div class="sysf-text-wrapper-l">
+              <div class="sysf-tagline-3 tagline-dew" fb-tooltip-position="top" fb-tooltip-animation="shift-away" fb-tooltip-message="Make it Your Own" fb-tooltip-theme="light" fb-tooltip-show-delay="500" fb-tooltip="true" fb-tooltip-trigger="hover">{{ section.settings.feature_tagline }}</div>
+              <h4 class="sysf-heading sysf-xl">{{ section.settings.feature_title }}</h4>
+              <p class="sysf-body-text sysf-m">{{ section.settings.feature_p | newline_to_br }}</p>
+            </div>
+          </div>
+          <div class="cards w-row">
+            <div class="basic-column w-col w-col-5">
+              <div class="tag-wrapper">
+                {%- if section.settings.stain_1 == nil -%}<div class="card card4-content">
+                  <div class="tagline-3 tagline-promo-40">{{ section.settings.stain_tagline_1 }}</div>
+                  <h3 class="card-headline-2 dark-card-headline _6col-card">{{ section.settings.stain_title_1 }}</h3>
+                </div>{%- else -%}<div class="card card4-content" style="background-image: url('{{ section.settings.stain_1.src | img_url: 'master' }}');">
+                  <div class="tagline-3 tagline-promo-40">{{ section.settings.stain_tagline_1 }}</div>
+                  <h3 class="card-headline-2 dark-card-headline _6col-card">{{ section.settings.stain_title_1 }}</h3>
+                </div>{%- endif -%}
+              </div>
+            </div>
+            <div class="basic-column w-col w-col-3">
+              <div class="tag-wrapper">
+                {%- if section.settings.stain_2 == nil -%}<div class="card card5-content">
+                  <div class="tagline-3 tagline-promo-40 tagline-sw">{{ section.settings.stain_tagline_2 }}</div>
+                  <h3 class="card-headline-2 dark-card-headline">{{ section.settings.stain_title_2 }}</h3>
+                </div>{%- else -%}<div class="card card5-content" style="background-image: url('{{ section.settings.stain_2.src | img_url: 'master' }}');">
+                  <div class="tagline-3 tagline-promo-40 tagline-sw">{{ section.settings.stain_tagline_2 }}</div>
+                  <h3 class="card-headline-2 dark-card-headline">{{ section.settings.stain_title_2 }}</h3>
+                </div>{%- endif -%}
+              </div>
+            </div>
+            <div class="basic-column w-col w-col-4">
+              <div class="tag-wrapper">
+                {%- if section.settings.stain_3 == nil -%}<div class="card card6-content">
+                  <div class="tagline-3 white-hero-tagline">{{ section.settings.stain_tagline_3 }}</div>
+                  <h3 class="card-headline-2 card-headline-small">{{ section.settings.stain_title_3 }}</h3>
+                  <a href="{{ section.settings.stains_url }}" class="button-5 default-button card-cta w-button">{{ section.settings.stains_url_text }}</a>
+                </div>{%- else -%}<div class="card card6-content" style="background-image: url('{{ section.settings.stain_3.src | img_url: 'master' }}');">
+                  <div class="tagline-3 white-hero-tagline">{{ section.settings.stain_tagline_3 }}</div>
+                  <h3 class="card-headline-2 card-headline-small">{{ section.settings.stain_title_3 }}</h3>
+                  <a href="{{ section.settings.stains_url }}" class="button-5 default-button card-cta w-button">{{ section.settings.stains_url_text }}</a>
+                </div>{%- endif -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("li-section","features 1");currentSection.setAttribute("class","feature-section finshes-section");</script>
+        
+{% schema %}
+{
+  "name": "feature section 1",
+  "tag": "div",
+  "class": "feature-section finshes-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "feature_tagline",
+      "label": "feature tagline",
+      "default": "121 unique combinations"
+    },
+    {
+      "type": "text",
+      "id": "feature_title",
+      "label": "feature title",
+      "default": "Eleven Different Finishes"
+    },
+    {
+      "type": "text",
+      "id": "stain_tagline_1",
+      "label": "stain tagline 1",
+      "default": "Silver Ash"
+    },
+    {
+      "type": "text",
+      "id": "stain_title_1",
+      "label": "stain title 1",
+      "default": "There's a style for every home"
+    },
+    {
+      "type": "text",
+      "id": "stain_tagline_2",
+      "label": "stain tagline 2",
+      "default": "Aged Barrel"
+    },
+    {
+      "type": "text",
+      "id": "stain_title_2",
+      "label": "stain title 2",
+      "default": "and every family"
+    },
+    {
+      "type": "text",
+      "id": "stain_tagline_3",
+      "label": "stain tagline 3",
+      "default": "sun bleached"
+    },
+    {
+      "type": "text",
+      "id": "stain_title_3",
+      "label": "stain title 3",
+      "default": "121 uniquestyles"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_p",
+      "label": "feature p",
+      "default": "Eleven different stain finishes to choose from for the base and the top. Customize the inside by adding shiplap for an even more refined look. Creating a total of 242 unique combinations."
+    },
+    {
+      "type": "image_picker",
+      "id": "stain_1",
+      "label": "stain 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "stain_2",
+      "label": "stain 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "stain_3",
+      "label": "stain 3"
+    },
+    {
+      "type": "url",
+      "id": "stains_url",
+      "label": "Stains URL"
+    },
+    {
+      "type": "text",
+      "id": "stains_url_text",
+      "label": "Stains URL Text",
+      "default": "Explore"
+    }
+  ]
+}
+{% endschema %}

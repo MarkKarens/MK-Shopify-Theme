@@ -1,0 +1,27 @@
+
+        <div class="wrapper-2">
+          <div class="row centre-align">
+            <div class="col lg-6 md-3 xs-2">
+              <h6 class="no-bottom-margins">{{ section.settings.text_feature | newline_to_br }}</h6>
+            </div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("li-section","text feature");currentSection.setAttribute("class","section-9");</script>
+        
+{% schema %}
+{
+  "name": "text section",
+  "tag": "div",
+  "class": "section-9",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "text_feature",
+      "label": "text feature",
+      "default": "Pets will love our pet homes because they offer cozy, secure spaces tailored to their needs. Each is designed to make your pet feel comfortable and at home."
+    }
+  ]
+}
+{% endschema %}

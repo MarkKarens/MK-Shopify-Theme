@@ -1,0 +1,162 @@
+
+        <div class="sysf-container">
+          <div class="sysf-wrapper-m">
+            <div class="sysf-section-title">
+              <div class="sysf-tagline" fb-tooltip-position="top" fb-tooltip-animation="shift-away" fb-tooltip-message="Learn More About Mark Karen's" fb-tooltip-theme="light" fb-tooltip-show-delay="500" fb-tooltip="true" fb-tooltip-trigger="hover">{{ section.settings.faq_tagline }}</div>
+              <h4 class="sysf-heading sysf-l">{{ section.settings.faq_title | newline_to_br }}</h4>
+              <p class="sysf-body-text">{{ section.settings.faq_p | newline_to_br }}</p>
+              <div class="button-data_content-3">
+                <a data-w-id="cd29f991-274e-9e2b-1e91-ca7400fc65ff" href="{{ pages["contact-us"].url }}" class="button-block-24 is--dark is-small w-inline-block">
+                  <div class="button-wrap-24">
+                    <div class="button-icon-wrap-24"></div>
+                    <div class="button-text-24 is-small">{{ 't7f274abe' | t }}</div>
+                    <div class="button-text-24-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!-- ! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.  -->
+                        <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor"></path>
+                      </svg></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="sysf-collapse">
+              <div class="sysf-collapse-item">
+                <div class="sysf-collapse-trigger">
+                  <div class="material-icons sysf-icon-left sysf-icon-collapse">{{ 'tn1a15da26' | t }}</div>
+                  <div class="sysf-collapse-title">{{ section.settings.faq_q_1 }}</div>
+                </div>
+                <div class="sysf-collapse-text">{{ section.settings.faq_a_1 | newline_to_br }}</div>
+              </div>
+              <div class="sysf-collapse-item">
+                <div class="sysf-collapse-trigger">
+                  <div class="material-icons sysf-icon-left sysf-icon-collapse">{{ 'tn1a15da26' | t }}</div>
+                  <div class="sysf-collapse-title">{{ section.settings.faq_q_2 }}</div>
+                </div>
+                <div class="sysf-collapse-text">{{ section.settings.faq_a_2 | newline_to_br }}</div>
+              </div>
+              <div class="sysf-collapse-item">
+                <div class="sysf-collapse-trigger">
+                  <div class="material-icons sysf-icon-left sysf-icon-collapse">{{ 'tn1a15da26' | t }}</div>
+                  <div class="sysf-collapse-title">{{ section.settings.faq_q_3 }}</div>
+                </div>
+                <div class="sysf-collapse-text">{{ section.settings.faq_a_3 | newline_to_br }}</div>
+              </div>
+              <div class="sysf-collapse-item">
+                <div class="sysf-collapse-trigger">
+                  <div class="material-icons sysf-icon-left sysf-icon-collapse">{{ 'tn1a15da26' | t }}</div>
+                  <div class="sysf-collapse-title">{{ section.settings.faq_q_4 }}</div>
+                </div>
+                <div class="sysf-collapse-text">{{ section.settings.faq_a_4 | newline_to_br }}</div>
+              </div>
+              <div class="sysf-collapse-item">
+                <div class="sysf-collapse-trigger">
+                  <div class="material-icons sysf-icon-left sysf-icon-collapse">{{ 'tn1a15da26' | t }}</div>
+                  <div class="sysf-collapse-title">{{ section.settings.faq_q_5 }}</div>
+                </div>
+                <div class="sysf-collapse-text">{{ section.settings.faq_a_5 | newline_to_br }}</div>
+              </div>
+              <div class="sysf-collapse-item">
+                <div class="sysf-collapse-trigger">
+                  <div class="material-icons sysf-icon-left sysf-icon-collapse">{{ 'tn1a15da26' | t }}</div>
+                  <div class="sysf-collapse-title">{{ section.settings.faq_q_6 }}</div>
+                </div>
+                <div class="sysf-collapse-text">{{ section.settings.faq_a_6 | newline_to_br }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("li-section","FAQ");currentSection.setAttribute("class","faq-section");</script>
+        
+{% schema %}
+{
+  "name": "FAQ section",
+  "tag": "div",
+  "class": "faq-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "faq_tagline",
+      "label": "faq tagline",
+      "default": "Learn More"
+    },
+    {
+      "type": "text",
+      "id": "faq_q_1",
+      "label": "FAQ Q 1",
+      "default": "Shipping & Returns"
+    },
+    {
+      "type": "text",
+      "id": "faq_q_2",
+      "label": "FAQ Q 2",
+      "default": "Where is your furniture made?"
+    },
+    {
+      "type": "text",
+      "id": "faq_q_3",
+      "label": "FAQ Q 3",
+      "default": "Will my pet use it?"
+    },
+    {
+      "type": "text",
+      "id": "faq_q_4",
+      "label": "FAQ Q 4",
+      "default": "Can I customize it? "
+    },
+    {
+      "type": "text",
+      "id": "faq_q_5",
+      "label": "FAQ Q 5",
+      "default": "How long until I receive it?"
+    },
+    {
+      "type": "text",
+      "id": "faq_q_6",
+      "label": "FAQ Q 6",
+      "default": "Who is Mark Karen's?"
+    },
+    {
+      "type": "textarea",
+      "id": "faq_title",
+      "label": "faq title",
+      "default": "Frequently Asked Questions & info"
+    },
+    {
+      "type": "textarea",
+      "id": "faq_p",
+      "label": "faq p",
+      "default": "We know it's a big purchase. Let us explain why Mark Karen's is absolutely worth it.More questions?"
+    },
+    {
+      "type": "richtext",
+      "id": "faq_a_1",
+      "label": "FAQ A 1"
+    },
+    {
+      "type": "richtext",
+      "id": "faq_a_2",
+      "label": "FAQ A 2"
+    },
+    {
+      "type": "richtext",
+      "id": "faq_a_3",
+      "label": "FAQ A 3"
+    },
+    {
+      "type": "richtext",
+      "id": "faq_a_4",
+      "label": "FAQ A 4"
+    },
+    {
+      "type": "richtext",
+      "id": "faq_a_5",
+      "label": "FAQ A 5"
+    },
+    {
+      "type": "richtext",
+      "id": "faq_a_6",
+      "label": "FAQ A 6"
+    }
+  ]
+}
+{% endschema %}

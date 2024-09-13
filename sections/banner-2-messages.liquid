@@ -1,0 +1,51 @@
+
+    {%- if section.settings.showhide_left_message -%}<div class="banner-wrap-small">
+      <div>
+        <div class="paragraph-small-12">{{ section.settings.banner_left_main_text | newline_to_br }}</div>
+        <div class="banner-detail">{{ section.settings.banner_left_small_text | newline_to_br }}</div>
+      </div>
+    </div>{%- endif -%}
+    {%- if section.settings.showhide_right_message -%}<div class="banner-wrap-small banner-right">
+      <div>
+        <div class="proudly-canadian">
+          <div class="waves---paragraph-small">{{ 't50cde069' | t }}</div><img src="{{ 'np_leaf_930479_e15042.svg' | asset_url }}" loading="lazy" width="21" alt="">
+        </div>
+      </div>
+    </div>{%- endif -%}
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","banner-update");</script>
+        
+{% schema %}
+{
+  "name": "Banner 2 messages",
+  "tag": "div",
+  "class": "banner-update",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "banner_left_main_text",
+      "label": "Banner left main text",
+      "default": "Welcome to Mark Karen's"
+    },
+    {
+      "type": "textarea",
+      "id": "banner_left_small_text",
+      "label": "Banner left small text",
+      "default": "Luxury Pet Friendly Furniture"
+    },
+    {
+      "type": "checkbox",
+      "id": "showhide_left_message",
+      "label": "Show/Hide Left Message",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "showhide_right_message",
+      "label": "Show/Hide Right Message",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

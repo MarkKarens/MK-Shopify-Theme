@@ -1,0 +1,20 @@
+
+        <div class="w-layout-blockcontainer container-11 w-container">{%- if section.settings.feature_img_1 == nil -%}<img width="886" alt="" src="{{ 'ai-060a8726-enhanced-nr-edit-optimized-4.avif' | asset_url }}" loading="lazy" li-section="large img 2" class="image-8">{%- else -%}<img width="886" alt="{{ section.settings.feature_img_1.alt | escape }}" src="{{ section.settings.feature_img_1.src | img_url: 'master' }}" loading="lazy" li-section="large img 2" class="image-8" srcset="{{ section.settings.feature_img_1 | img_url: '1920x' }} 1920w,{{ section.settings.feature_img_1 | img_url: '1600x' }} 1600w,{{ section.settings.feature_img_1 | img_url: '1366x' }} 1366w,{{ section.settings.feature_img_1 | img_url: '1024x' }} 1024w,{{ section.settings.feature_img_1 | img_url: '768x' }} 768w,{{ section.settings.feature_img_1 | img_url: '640x' }} 640w">{%- endif -%}</div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section-10");</script>
+        
+{% schema %}
+{
+  "name": "Large Photo 2",
+  "tag": "section",
+  "class": "section-10",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "feature_img_1",
+      "label": "feature img 1"
+    }
+  ]
+}
+{% endschema %}

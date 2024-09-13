@@ -1,0 +1,24 @@
+{%- assign headerSnippetPath = "header-collection" -%}{%- assign wfPage = "6655f8ec723faeae23c8641c" -%}{%- assign bodyClasses = "" -%}
+  {%- render 'contactsocial-bar' -%}
+  {%- section 'navbar' -%}
+  <div class="page-wrapper">
+    <div class="main-page">
+      <div class="section">
+        <div class="main-container">
+          <div class="product-header-wrapper">
+            <div data-w-id="b6656d4e-8684-161d-b53e-b0cc73204c38" class="product-header-text-wrap">
+              <div class="title-uppercase-text color-white">{{ 'tn5c05b2e2' | t }}</div>
+              <h1 class="heading-white">{{ 't24263543' | t }}</h1>
+            </div><img src="{{ 'untitled_1.avif' | asset_url }}" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 991px) 100vw, 94vw" srcset="{{ 'untitled_1untitled.avif' | asset_url }} 500w, {{ 'untitled_1untitled.avif' | asset_url }} 800w, {{ 'untitled_1untitled.avif' | asset_url }} 1080w, {{ 'untitled_1untitled.avif' | asset_url }} 1600w, {{ 'untitled_1untitled.avif' | asset_url }} 2000w, {{ 'untitled_1untitled.avif' | asset_url }} 2600w, {{ 'untitled_1untitled.avif' | asset_url }} 3200w, {{ 'untitled_1.avif' | asset_url }} 4751w" alt="" class="e-commerce-image-header">
+          </div>
+          {%- if settings.collection_categories_template != blank -%}{%- render "markup_for_collection_categories_template" -%}{%- else -%}{%- render "products_sorted_by_created_on" -%}{%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+  {%- section 'footer-2' -%}
+  {%- render 'footer-contact-bar' -%}
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6655f8eb723faeae23c863ce" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
+
+{{ 'udesly-shopify.min.js' | asset_url | script_tag }}

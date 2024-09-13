@@ -1,0 +1,32 @@
+{% capture listItems %}
+{% paginate blogs['stain-options'].articles by 999 %}
+{%- assign allItems = blogs['stain-options'].articles -%}{%- assign allItems = allItems | sort: 'title' -%}
+{%- for item in allItems  -%}
+                <div role="listitem" class="w-dyn-item">
+                        <div class="wood-component-item">
+                          <div data-w-id="0429c7a3-8047-fe85-6dc0-88cc6c381ad9" class="image-wrapper-2 wood"><img width="163" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0) ;background-image: url('{{item.image | img_url: 'master'}}')" src="{{ item.image | img_url: 'master' }}" loading="lazy" class="image-fill">
+                            <div style="display:block;-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="image-overlay"></div>
+                          </div>
+                          <div class="wood-component-content">
+                            <div class="wood-component-title">
+                              <h4 class="stain-heading">{{ item.title }}</h4>
+                            </div>
+                            <div class="wood-component-text">
+                              <div class="text-block-40">Walnut’s deep brown and dark coloring makes it a premier choice. It’s a fine-grained wood that can be stained easily and looks great when polished. Though it’s one of the more expensive hardwoods, its beautiful appearance makes it worth.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+{%- endfor -%}
+{% endpaginate %}
+{% endcapture %}
+{% assign items_length = listItems | strip | size %}
+
+<div class="w-dyn-list" udy-collection="stain-options">
+                    {%- unless items_length == 0 -%}<div role="list" class="w-dyn-items">
+                      {{ listItems }}
+                    </div>{%- endunless -%}
+                    {%- if items_length == 0 -%}<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>{%- endif -%}
+                  </div>
