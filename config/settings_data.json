@@ -1,0 +1,253 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "current": {
+    "sections": {
+      "banner-2-messages": {
+        "type": "banner-2-messages",
+        "settings": {
+          "banner_left_main_text": "Welcome to Mark Karen's",
+          "banner_left_small_text": "Luxury Pet Friendly Furniture",
+          "showhide_left_message": true,
+          "showhide_right_message": true
+        }
+      },
+      "navbar": {
+        "type": "navbar",
+        "settings": {
+          "link_the_addison": "",
+          "link_the_bellamere": "",
+          "url_1": "shopify:\/\/products\/addison-1",
+          "url_1_text": "The Addison",
+          "url_2": "shopify:\/\/products\/bellamere",
+          "url_2_text": "The Bellamere",
+          "url_3": "",
+          "url_3_text": "About Us",
+          "show_link": true
+        }
+      },
+      "hero-section": {
+        "type": "hero-section",
+        "settings": {
+          "hero_tagline": "You both deserve",
+          "hero_p": "Customizable, Hand Crafted & Made to order.",
+          "cta_link": "",
+          "cta_link_text": "Shop Now",
+          "secondary_url": "",
+          "secondary_url_text": "Learn More",
+          "show_secondary_button": true
+        }
+      },
+      "gallery-section": {
+        "type": "gallery-section",
+        "settings": {
+          "tagline": "multiple sizes. no assembly required."
+        }
+      },
+      "addison-section": {
+        "type": "addison-section",
+        "settings": {
+          "addison_info_1": "Quality Materials",
+          "addison_info_2": "Customizable",
+          "addison_info_3": "Easy to Clean",
+          "addison_info_p_1": "Our designs are made with solidEastern White Pine wood (Pet Safe). No cheap press board or fake wood here!",
+          "addison_info_p_2": "Choose the perfect SIZE and STAIN to match your dog and your room.",
+          "addison_info_p_3": "We know that pets make a mess!Which is why we installed laminateflooring for easy cleaning!"
+        }
+      },
+      "large-photo": {
+        "type": "large-photo",
+        "settings": {
+          "feature_img_1": "shopify:\/\/shop_images\/AI_060A8726-Enhanced-NR-Edit_Optimized_4.webp"
+        }
+      },
+      "bellamere-section": {
+        "type": "bellamere-section",
+        "settings": {
+          "bellamere_info_1": "For crate trained pets",
+          "bellamere_info_2": "Make it yours",
+          "bellamere_info_3": "Built to order",
+          "bellamere_info_p_1": "It's time to upgrade the wire crate to something that can seamlessly blend into your home.",
+          "bellamere_info_p_2": "Customize with multiple sizes, stain options & more. Each size has 242 unique combinations!",
+          "bellamere_info_p_3": "Each Mark Karen's furniture piece is meticulously crafted to order. Ensuring quality every time."
+        }
+      },
+      "text-section": {
+        "type": "text-section",
+        "settings": {
+          "text_feature": "Pets will love our pet homes because they offer cozy, secure spaces tailored to their needs. Each is designed to make your pet feel comfortable and at home."
+        }
+      },
+      "feature-section-1": {
+        "type": "feature-section-1",
+        "settings": {
+          "feature_tagline": "121 unique combinations",
+          "feature_title": "Eleven Different Finishes",
+          "stain_tagline_1": "Silver Ash",
+          "stain_title_1": "There's a style for every home",
+          "stain_tagline_2": "Aged Barrel",
+          "stain_title_2": "and every family",
+          "stain_tagline_3": "sun bleached",
+          "stain_title_3": "121 uniquestyles",
+          "feature_p": "Eleven different stain finishes to choose from for the base and the top. Customize the inside by adding shiplap for an even more refined look. Creating a total of 242 unique combinations.",
+          "stains_url": "",
+          "stains_url_text": "Explore"
+        }
+      },
+      "feature-section-2": {
+        "type": "feature-section-2",
+        "settings": {
+          "engraving_tagline": "Coming Soon",
+          "engraving_title": "Custom name engraving",
+          "engraving_p": "Personalize your pets home with a unique laser engraved nameplate."
+        }
+      },
+      "large-photo-2": {
+        "type": "large-photo-2",
+        "settings": {
+          "feature_img_1": "shopify:\/\/shop_images\/AI_060A8726-Enhanced-NR-Edit_Optimized_3.webp"
+        }
+      },
+      "faq-section": {
+        "type": "faq-section",
+        "settings": {
+          "faq_tagline": "Learn More",
+          "faq_q_1": "Shipping & Returns",
+          "faq_q_2": "Where is your furniture made?",
+          "faq_q_3": "Will my pet use it?",
+          "faq_q_4": "Can I customize it?",
+          "faq_q_5": "How long until I receive it?",
+          "faq_q_6": "Who is Mark Karen's?",
+          "faq_title": "Frequently Asked Questions & info",
+          "faq_p": "We know it's a big purchase. Let us explain why Mark Karen's is absolutely worth it.More questions?",
+          "faq_a_1": "",
+          "faq_a_2": "",
+          "faq_a_3": "",
+          "faq_a_4": "",
+          "faq_a_5": "",
+          "faq_a_6": ""
+        }
+      },
+      "insta-feed": {
+        "type": "insta-feed",
+        "settings": {
+          "insta_feed_tagline": "Follow Us",
+          "insta_feed_title": "Find us on Instagram",
+          "insta_feed_url_1": "",
+          "insta_feed_url_2": "",
+          "insta_feed_url_3": "",
+          "insta_feed_url_4": "",
+          "insta_feed_url_5": ""
+        }
+      },
+      "footer-2": {
+        "type": "footer-2",
+        "settings": {
+          "footer_tagline": "Luxury pet furniture",
+          "footer_email": "hello@markkarens.com",
+          "footer_phone": "226-458-44488",
+          "footer_menu_1_title": "Quick Links",
+          "footer_menu_2_title": "Information",
+          "footer_social_url_1": "",
+          "footer_social_url_2": "",
+          "footer_link_1": "",
+          "footer_link_1_text": "Contact Us",
+          "footer_addison_url": "",
+          "footer_link_2": "",
+          "footer_link_2_text": "The Addison",
+          "footer_bellamere_url": "",
+          "footer_link_3": "",
+          "footer_link_3_text": "The Bellamere",
+          "footer_link_4": "",
+          "footer_link_4_text": "All Products"
+        }
+      },
+      "product-feature": {
+        "type": "product-feature",
+        "settings": {
+          "feature_1": "Customizable",
+          "feature_2": "Made to Order"
+        }
+      },
+      "featured-reviews": {
+        "type": "featured-reviews",
+        "settings": {
+          "reviews_tagline": "Reviews",
+          "reviews_title": "Hear From Our Customers"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "3720565183479497137": {
+        "type": "shopify:\/\/apps\/globo-product-option\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "10148494829067693542": {
+        "type": "shopify:\/\/apps\/xo-insert-code\/blocks\/insert-code-body\/72017b12-3679-442e-b23c-5c62460717f5",
+        "disabled": false,
+        "settings": {
+          "custom_liquid": "",
+          "custom_css": "",
+          "custom_js": ""
+        }
+      },
+      "11068332061543699368": {
+        "type": "shopify:\/\/apps\/booster-page-speed-optimizer\/blocks\/app-embed\/d920faf3-7c60-423a-9636-22618b5561b5",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "5134484470793087125": {
+        "type": "shopify:\/\/apps\/vitals\/blocks\/app-embed\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13392549970259155148": {
+        "type": "shopify:\/\/apps\/xo-insert-code\/blocks\/insert-code-header\/72017b12-3679-442e-b23c-5c62460717f5",
+        "disabled": false,
+        "settings": {
+          "custom_liquid": "",
+          "custom_css": "",
+          "custom_js": ""
+        }
+      },
+      "478144830049398400": {
+        "type": "shopify:\/\/apps\/storeseo\/blocks\/store_seo_meta\/64b24496-16f9-4afc-a800-84e6acc4a36c",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "17940372039816912135": {
+        "type": "shopify:\/\/apps\/visually-on-site-optimization\/blocks\/visually\/d08aba15-0b89-475b-9f75-9c4c0ca8c3c4",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".gpo-app, .gpo-app .gpo-input, .gpo-app .gpo-input::placeholder, .gpo-app .gpo-select select {background-color: #f8f8fa;}",
+      ".gpo-app .gpo-label,.gpo-app .gpo-label span.label-content,.gpo-app .gpo-label span.addOn,.gpo-app .gpo-label.required span.label-content::after {font-size: 24px;}"
+    ]
+  }
+}
