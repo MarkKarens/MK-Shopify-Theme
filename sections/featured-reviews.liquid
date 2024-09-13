@@ -1,0 +1,35 @@
+
+        <div class="div-block-13">
+          <div class="w-layout-grid sysf-hero-grid engraving-grid">
+            <div id="w-node-aae96fc3-1943-7c77-60ac-26271b8f67e0-1b8f67dd" class="sysf-text-wrapper-l engraving-text-wrapper">
+              <div class="sysf-tagline-3 tagline-dew">{{ section.settings.engraving_tagline }}</div>
+              <h4 class="sysf-heading sysf-xl">{{ section.settings.engraving_title }}</h4>
+              <div id="klaviyo-featured-reviews-carousel" class="div-block-30"></div>
+            </div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("li-section","features 2");currentSection.setAttribute("class","featured-reviews");</script>
+        
+{% schema %}
+{
+  "name": "featured-reviews",
+  "tag": "div",
+  "class": "featured-reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "engraving_tagline",
+      "label": "engraving tagline",
+      "default": "Reviews"
+    },
+    {
+      "type": "text",
+      "id": "engraving_title",
+      "label": "engraving title",
+      "default": "Hear From Our Customers"
+    }
+  ]
+}
+{% endschema %}
