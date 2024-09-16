@@ -95,9 +95,9 @@
           "stain_tagline_2": "Aged Barrel",
           "stain_title_2": "and every family",
           "stain_tagline_3": "sun bleached",
-          "stain_title_3": "121 uniquestyles",
+          "stain_title_3": "121 unique styles",
           "feature_p": "Eleven different stain finishes to choose from for the base and the top. Customize the inside by adding shiplap for an even more refined look. Creating a total of 242 unique combinations.",
-          "stains_url": "",
+          "stains_url": "shopify:\/\/pages\/stain-options",
           "stains_url_text": "Explore"
         }
       },
@@ -140,6 +140,7 @@
         "settings": {
           "insta_feed_tagline": "Follow Us",
           "insta_feed_title": "Find us on Instagram",
+          "insta_feed_img_1": "shopify:\/\/shop_images\/intro.webp",
           "insta_feed_url_1": "",
           "insta_feed_url_2": "",
           "insta_feed_url_3": "",
