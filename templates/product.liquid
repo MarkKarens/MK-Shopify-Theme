@@ -1,6 +1,6 @@
 {%- assign headerSnippetPath = "header-product" -%}{%- assign wfPage = "6655f8ec723faeae23c8641b" -%}{%- assign bodyClasses = "body-4" -%}
   {%- section 'banner-2-messages' -%}
-  {%- render 'contactsocial-bar' -%}
+  {%- section 'contactsocial-bar' -%}
   {%- section 'navbar' -%}
   <div class="page-wrapper">
     <section class="section-regular">
@@ -40,22 +40,7 @@
                 <p class="paragraph-large">{{ product.metafields.udesly['description'] }}</p>
               </div>
               {%- section 'product-feature' -%}
-              <div class="div-block-29">
-                <div class="product-info-block _2nd-info-block">
-                  <div class="sizing-grow">
-                    <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;a7e3da99-5036-7f20-5425-9ca5e7d60bd0&quot;}}}" class="subheading-small">{{ 't1b85fc92' | t }}</div>
-                    <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;08fc796e-ae4f-b7e8-3b45-daa56761ce2b&quot;}}}" class="caption-regular">{{ 'tn5f197f9a' | t }}</div>
-                  </div>
-                  <a href="#" class="product-close-button w-inline-block"></a>
-                </div>
-                <div class="product-info-block _2nd-info-block">
-                  <div class="sizing-grow">
-                    <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;a7e3da99-5036-7f20-5425-9ca5e7d60bd0&quot;}}}" class="subheading-small">{{ 't701b26ea' | t }}</div>
-                    <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;08fc796e-ae4f-b7e8-3b45-daa56761ce2b&quot;}}}" class="caption-regular">{{ 't1ceddd2d' | t }}</div>
-                  </div>
-                  <a href="#" class="product-close-button w-inline-block"></a>
-                </div>
-              </div>
+              {%- section 'selling-points-1' -%}
             </div>
             <div id="w-node-_48820177-7fe4-2cb4-d825-15b088facf1c-23c8641b" class="purchase-wrapper">
               <div class="wrap-v-x-small">

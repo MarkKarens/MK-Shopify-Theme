@@ -1,1 +1,0 @@
-# MK-Shopify-Theme

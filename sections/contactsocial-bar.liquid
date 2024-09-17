@@ -1,14 +1,14 @@
-<div option:checkbox="Show contact banner" class="contact-bar contact-bar-dark">
+
     <div class="contact-bar-2">
       <div class="contact-bar-container w-container">
         <div class="c-bar-inside">
           <div class="a-bar-left">
             <div>
-              <div class="waves---paragraph-small contact-message">{{ 'tnf4051c2' | t }}</div>
+              <div class="waves---paragraph-small contact-message">{{ section.settings.contact_bar_message }}</div>
             </div>
             <a href="#" class="a-bar-text w-inline-block">
               <div class="waves---paragraph-small">{{ 't7c' | t }}</div>
-              <div class="waves---paragraph-small">{{ 'tn28171b24' | t }}</div>
+              <div class="waves---paragraph-small">{{ section.settings.contact_email }}</div>
             </a>
           </div>
           <div class="c-bar-right social-icons">
@@ -28,4 +28,28 @@
         </div>
       </div>
     </div>
-  </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("option:checkbox","Show contact banner");currentSection.setAttribute("class","contact-bar contact-bar-dark");</script>
+        
+{% schema %}
+{
+  "name": "Contact/Social bar",
+  "tag": "div",
+  "class": "contact-bar contact-bar-dark",
+  "settings": [
+    {
+      "type": "text",
+      "id": "contact_bar_message",
+      "label": "contact bar message",
+      "default": "Currently only delivering to Southern Ontario, Canada"
+    },
+    {
+      "type": "text",
+      "id": "contact_email",
+      "label": "Contact email",
+      "default": "hello@markkarens.com"
+    }
+  ]
+}
+{% endschema %}
