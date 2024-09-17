@@ -48,6 +48,8 @@
       "gallery-section": {
         "type": "gallery-section",
         "settings": {
+          "gallery_tagline": "multiple sizes. no assembly required.",
+          "gallery_heading": "Design Your Perfect Piece of Pet Furniture",
           "gallery_2_1": "shopify:\/\/shop_images\/060a8802-enhanced-nr-edit-wf-optimized.webp",
           "g2_2": "shopify:\/\/shop_images\/060a8643-enhanced-nr-wf-optimized.webp",
           "g2_3": "shopify:\/\/shop_images\/060a8780-enhanced-nr-edit-wf-optimized.webp",
@@ -130,12 +132,12 @@
           "faq_q_6": "Who is Mark Karen's?",
           "faq_title": "Frequently Asked Questions & info",
           "faq_p": "We know it's a big purchase. Let us explain why Mark Karen's is absolutely worth it.More questions?",
-          "faq_a_1": "",
-          "faq_a_2": "",
-          "faq_a_3": "",
-          "faq_a_4": "",
-          "faq_a_5": "",
-          "faq_a_6": ""
+          "faq_a_1": "<p>Shipping Costs: Shipping costs are calculated at checkout based on the delivery address and size of the items ordered. In some cases, additional charges may apply for remote locations or special delivery requirements.<br\/><br\/>Return Eligibility: We accept returns within 30 days of delivery for unused, undamaged items. Custom or personalized items are not eligible for return unless defective.<br\/><br\/>Return Process: To initiate a return, please contact our customer service team at hello@markkarens.com with your order number and details of the item(s) you wish to return. Our team will guide you through the return process, including how to securely package the item(s) for return.<br\/><br\/>Return Shipping Costs: Return shipping costs are the responsibility of the customer unless the return is due to a defect or an error on our part.<br\/><br\/>Refunds: Once your return is received and inspected, we will notify you of the approval or rejection of your refund. Approved refunds will be processed within 4-10 business days and will be credited to your original method of payment.<\/p>",
+          "faq_a_2": "<p>Proudly Canadian. All Mark Karen's furniture is hand crafted in Southern Ontario.<\/p>",
+          "faq_a_3": "<p>Pets will naturally be drawn to both The Addison and The Bellamere because these luxurious pet homes are designed to meet their need for comfort and security. The Addison, with its doorless design, offers a cozy, inviting space where pets can retreat, sleep, or simply relax without feeling confined. It’s perfect for dogs that enjoy having their own space while still feeling free.<br\/><br\/>The Bellamere, on the other hand, provides a more enclosed environment with its sliding barn-style door, ideal for crate-trained dogs or those that feel safer in a more private setting. This design caters to their instinctual desire for a den-like space where they can unwind, feel secure, and rest peacefully. Both products are crafted to make dogs feel at home, whether they crave a sense of freedom or a bit more security.<\/p>",
+          "faq_a_4": "<p>Yes! Mark Karen's pet furniture is specifically designed to be able to fit into any home setting. Our Mark Karen's pet homes come in 3 sizes, each with 242 unique combinations.<\/p>",
+          "faq_a_5": "<p>Once your order is placed, it typically takes 3-4 weeks for your furniture to be delivered. This timeline may vary depending on your location, order size, and any customizations requested.<\/p>",
+          "faq_a_6": "<p>Mark Karen’s is a luxury pet furniture company specializing in handcrafted, pet-friendly pieces that seamlessly blend into any home and style. Each product is meticulously crafted by Mark & Karen Ormandy in Southern Ontario. As part of Camp Shake-A-Paw, a renowned dog service provider based in London, Ontario, Mark Karen’s combines quality craftsmanship with a deep love for pets.<\/p>"
         }
       },
       "insta-feed": {
