@@ -2168,7 +2168,7 @@ figure {
 
 .heading-white {
   color: var(--white);
-  font-family: Raleway Variablefont Wght, sans-serif;
+  font-family: Raleway;
 }
 
 .featured-blog-content-wrapper {
@@ -2816,7 +2816,7 @@ figure {
 .contact-bar.contact-bar-dark {
   z-index: 2;
   border-bottom-color: var(--secondary);
-  background-color: var(--gray10);
+  background-color: var(--white);
   color: var(--white);
 }
 
@@ -3421,18 +3421,8 @@ figure {
   height: 100%;
 }
 
-.image-cover-3.product-image-side, .image-cover-3.product-image-small {
+.image-cover-3.product-image-side, .image-cover-3.product-image-small, .image-cover-3.product-image-main {
   object-fit: cover;
-}
-
-.image-cover-3.product-image-main {
-  box-sizing: border-box;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  object-position: 50% 70%;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
-  background-position: 50% 100%;
-  background-size: auto;
 }
 
 .h4-heading {
@@ -3723,8 +3713,8 @@ figure {
 .product-grid-2 {
   grid-column-gap: 24px;
   grid-row-gap: 24px;
-  grid-template: "Area" 654px
-  / 4.25fr;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr;
   margin-top: 32px;
   margin-bottom: 32px;
   font-family: Montserrat, sans-serif;
@@ -3749,6 +3739,7 @@ figure {
 
 .product-image-large {
   border-radius: 8px;
+  height: 588px;
   overflow: hidden;
 }
 
@@ -6576,7 +6567,7 @@ figure {
 
 .heading-card.small {
   letter-spacing: -.07rem;
-  font-family: Raleway Variablefont Wght, sans-serif;
+  font-family: Raleway;
   font-size: 1.5rem;
 }
 
@@ -6852,7 +6843,6 @@ figure {
 }
 
 .link-block-10 {
-  max-height: 50px;
   margin-right: -5px;
 }
 
@@ -8211,7 +8201,6 @@ figure {
 
 .paragraph-72 {
   margin-bottom: 10px;
-  font-size: 22px;
 }
 
 .cell {
@@ -8369,10 +8358,6 @@ figure {
 
 .text-block-51 {
   font-weight: 500;
-}
-
-.link-block-11 {
-  max-height: 50px;
 }
 
 @media screen and (min-width: 1280px) {
