@@ -1432,9 +1432,11 @@ figure {
 }
 
 .page-wrapper {
+  z-index: 5;
   flex-flow: column;
   justify-content: flex-start;
   display: flex;
+  position: relative;
 }
 
 .page-wrapper.wrapper-policies {
@@ -1959,8 +1961,10 @@ figure {
 }
 
 .main-page {
+  z-index: 5;
   padding: 0;
   font-family: Montserrat, sans-serif;
+  position: relative;
 }
 
 .button-wrapper {
@@ -4427,6 +4431,7 @@ figure {
 }
 
 .wrap._w-custom.hero3 {
+  z-index: 5;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-rows: auto auto;
@@ -4455,6 +4460,7 @@ figure {
 }
 
 .hero {
+  z-index: 5;
   background-color: var(--white);
   color: #fff;
   background-image: url({{'basecamp-060a8529-edit-optimized_1.avif' | asset_url }});
