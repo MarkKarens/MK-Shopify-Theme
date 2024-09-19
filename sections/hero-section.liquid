@@ -1,0 +1,70 @@
+
+        <div class="w-layout-grid wrap _w-custom hero3">
+          <div id="w-node-_98ace906-ed53-4437-0068-9af967350d7f-67350d7d" class="div-block-14"></div>
+          <div id="w-node-_98ace906-ed53-4437-0068-9af967350d80-67350d7d" class="hero3-text-wrapper">
+            <div class="hero3-headline-wrap">
+              <div data-gsap="txt.3" li-section="hero" class="tagline">{{ section.settings.hero_tagline }}</div>
+              <h1 data-gsap="txt.3" class="heading-31">{{ 'tn75f6a721' | t }}<br><span class="text-span-2">{{ 'tn184f1e0f' | t }}</span><br></h1>
+              <div data-gsap="par.1" class="text-20 text-20-60">{{ section.settings.hero_p | newline_to_br }}</div>
+            </div>
+            <div class="div-block-8">
+              <div class="hero3-firstbutton-wrap">
+                <a href="{{ section.settings.cta_link }}" class="button-primary w-button">{{ section.settings.cta_link_text }}</a>
+              </div>
+              {%- if section.settings.show_secondary_button -%}<a href="{{ section.settings.secondary_url }}" target="_blank" class="button-secondary btn-secondary-small w-button">{{ section.settings.secondary_url_text }}</a>{%- endif -%}
+            </div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","hero");</script>
+        
+{% schema %}
+{
+  "name": "hero section",
+  "tag": "div",
+  "class": "hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "hero_tagline",
+      "label": "Hero Tagline",
+      "default": "You both deserve"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_p",
+      "label": "hero p",
+      "default": "Customizable, Hand Crafted & Made to order."
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA link"
+    },
+    {
+      "type": "text",
+      "id": "cta_link_text",
+      "label": "CTA link Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "secondary_url",
+      "label": "secondary url"
+    },
+    {
+      "type": "text",
+      "id": "secondary_url_text",
+      "label": "secondary url Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_button",
+      "label": "Show Secondary Button",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

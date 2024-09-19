@@ -1,0 +1,76 @@
+
+        <div class="container-regular-2">
+          <div class="flex-wrapper-centre margin-bottom-48">
+            <div data-gsap="txt.15" class="heading-detail-small margin-bottom-12 text-color-gray-500">{{ section.settings.gallery_tagline }}</div>
+            <h2 data-gsap="txt.3" class="heading-98">{{ section.settings.gallery_heading | newline_to_br }}</h2>
+          </div>
+          <div class="sliding-gallery-wrapper">
+            <div class="social-media-marquee">
+              <div class="marquee-group">
+                <div class="social-media-image-large">{%- if section.settings.gallery_2_1 == nil -%}<img class="image-cover-4" src="{{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }}" alt="Placeholder Instagram - Instagram Feeds Cloneable Template" sizes="(max-width: 479px) 204.4140625px, 443.6640625px" loading="lazy" srcset="{{ 'featured-image-instagram-feeds-cloneable-template-p-500.png' | asset_url }} 500w, {{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }} 792w">{%- else -%}<img class="image-cover-4" src="{{ section.settings.gallery_2_1.src | img_url: 'master' }}" alt="{{ section.settings.gallery_2_1.alt | escape }}" loading="lazy" srcset="{{ section.settings.gallery_2_1 | img_url: '1920x' }} 1920w,{{ section.settings.gallery_2_1 | img_url: '1600x' }} 1600w,{{ section.settings.gallery_2_1 | img_url: '1366x' }} 1366w,{{ section.settings.gallery_2_1 | img_url: '1024x' }} 1024w,{{ section.settings.gallery_2_1 | img_url: '768x' }} 768w,{{ section.settings.gallery_2_1 | img_url: '640x' }} 640w">{%- endif -%}</div>
+                <div class="social-media-image-large">{%- if section.settings.g2_2 == nil -%}<img class="image-cover-4" src="{{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }}" alt="Placeholder Instagram - Instagram Feeds Cloneable Template" sizes="(max-width: 479px) 204.4140625px, 443.6640625px" loading="lazy" srcset="{{ 'featured-image-instagram-feeds-cloneable-template-p-500.png' | asset_url }} 500w, {{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }} 792w">{%- else -%}<img class="image-cover-4" src="{{ section.settings.g2_2.src | img_url: 'master' }}" alt="{{ section.settings.g2_2.alt | escape }}" loading="lazy" srcset="{{ section.settings.g2_2 | img_url: '1920x' }} 1920w,{{ section.settings.g2_2 | img_url: '1600x' }} 1600w,{{ section.settings.g2_2 | img_url: '1366x' }} 1366w,{{ section.settings.g2_2 | img_url: '1024x' }} 1024w,{{ section.settings.g2_2 | img_url: '768x' }} 768w,{{ section.settings.g2_2 | img_url: '640x' }} 640w">{%- endif -%}</div>
+                <div class="social-media-image-large">{%- if section.settings.g2_3 == nil -%}<img class="image-cover-4" src="{{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }}" alt="Placeholder Instagram - Instagram Feeds Cloneable Template" sizes="(max-width: 479px) 204.4140625px, 443.6640625px" loading="lazy" srcset="{{ 'featured-image-instagram-feeds-cloneable-template-p-500.png' | asset_url }} 500w, {{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }} 792w">{%- else -%}<img class="image-cover-4" src="{{ section.settings.g2_3.src | img_url: 'master' }}" alt="{{ section.settings.g2_3.alt | escape }}" loading="lazy" srcset="{{ section.settings.g2_3 | img_url: '1920x' }} 1920w,{{ section.settings.g2_3 | img_url: '1600x' }} 1600w,{{ section.settings.g2_3 | img_url: '1366x' }} 1366w,{{ section.settings.g2_3 | img_url: '1024x' }} 1024w,{{ section.settings.g2_3 | img_url: '768x' }} 768w,{{ section.settings.g2_3 | img_url: '640x' }} 640w">{%- endif -%}</div>
+                <div class="social-media-image-large">{%- if section.settings.g2_4 == nil -%}<img class="image-cover-4" src="{{ '060a8643-enhanced-nr_1.avif' | asset_url }}" alt="" sizes="(max-width: 479px) 204.4140625px, 443.6640625px" loading="lazy" srcset="{{ '060a8643-enhanced-nr_1060a8643-enhanced-nr.avif' | asset_url }} 500w, {{ '060a8643-enhanced-nr_1060a8643-enhanced-nr.avif' | asset_url }} 800w, {{ '060a8643-enhanced-nr_1060a8643-enhanced-nr.avif' | asset_url }} 1080w, {{ '060a8643-enhanced-nr_1060a8643-enhanced-nr.avif' | asset_url }} 1600w, {{ '060a8643-enhanced-nr_1060a8643-enhanced-nr.avif' | asset_url }} 2000w, {{ '060a8643-enhanced-nr_1060a8643-enhanced-nr.avif' | asset_url }} 2600w, {{ '060a8643-enhanced-nr_1.avif' | asset_url }} 4480w">{%- else -%}<img class="image-cover-4" src="{{ section.settings.g2_4.src | img_url: 'master' }}" alt="{{ section.settings.g2_4.alt | escape }}" loading="lazy" srcset="{{ section.settings.g2_4 | img_url: '1920x' }} 1920w,{{ section.settings.g2_4 | img_url: '1600x' }} 1600w,{{ section.settings.g2_4 | img_url: '1366x' }} 1366w,{{ section.settings.g2_4 | img_url: '1024x' }} 1024w,{{ section.settings.g2_4 | img_url: '768x' }} 768w,{{ section.settings.g2_4 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              </div>
+            </div>
+            <div class="marquee-embed w-embed">
+              <style>
+  /* MARQUEE LOGO*/
+.social-media-marquee {
+  will-change: transform;
+  animation: work-example 23s linear infinite;
+  /* manipulate the speed of the marquee by changing "40s" line above*/
+}
+@keyframes work-example {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
+</style>
+            </div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","section-gallery");</script>
+        
+{% schema %}
+{
+  "name": "gallery section",
+  "tag": "div",
+  "class": "section-gallery",
+  "settings": [
+    {
+      "type": "text",
+      "id": "gallery_tagline",
+      "label": "gallery tagline",
+      "default": "multiple sizes. no assembly required."
+    },
+    {
+      "type": "textarea",
+      "id": "gallery_heading",
+      "label": "gallery heading",
+      "default": "Design Your Perfect Piece of Pet Furniture"
+    },
+    {
+      "type": "image_picker",
+      "id": "gallery_2_1",
+      "label": "gallery 2-1"
+    },
+    {
+      "type": "image_picker",
+      "id": "g2_2",
+      "label": "g2-2"
+    },
+    {
+      "type": "image_picker",
+      "id": "g2_3",
+      "label": "g2-3"
+    },
+    {
+      "type": "image_picker",
+      "id": "g2_4",
+      "label": "g2-4"
+    }
+  ]
+}
+{% endschema %}

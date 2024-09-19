@@ -1,0 +1,30 @@
+
+        <div class="main-container">
+          <div class="w-layout-grid about-header-wrapper">
+            <h1 id="w-node-d0fac137-535b-bce3-af92-77dd6ba27c6f-6ba27c6c" data-w-id="d0fac137-535b-bce3-af92-77dd6ba27c6f" class="heading-23">{{ 'tn5c05b2e2' | t }}</h1>
+            <div id="w-node-d0fac137-535b-bce3-af92-77dd6ba27c71-6ba27c6c" class="about-us-content-container">
+              <p data-w-id="d0fac137-535b-bce3-af92-77dd6ba27c72" class="body-text-n-reg">{{ section.settings.about_p1 | newline_to_br }}</p>
+            </div>
+          </div>
+          <div data-w-id="d0fac137-535b-bce3-af92-77dd6ba27c89" class="about-image-wrap"><img src="{{ 'basecamp-060a8529-edit-optimized_1.avif' | asset_url }}" loading="lazy" sizes="(max-width: 991px) 100vw, 94vw" srcset="{{ 'basecamp-060a8529-edit-optimized_1basecamp-060a8529-edit-optimized.avif' | asset_url }} 500w, {{ 'basecamp-060a8529-edit-optimized_1basecamp-060a8529-edit-optimized.avif' | asset_url }} 800w, {{ 'basecamp-060a8529-edit-optimized_1basecamp-060a8529-edit-optimized.avif' | asset_url }} 1080w, {{ 'basecamp-060a8529-edit-optimized_1basecamp-060a8529-edit-optimized.avif' | asset_url }} 1600w, {{ 'basecamp-060a8529-edit-optimized_1basecamp-060a8529-edit-optimized.avif' | asset_url }} 2000w, {{ 'basecamp-060a8529-edit-optimized_1basecamp-060a8529-edit-optimized.avif' | asset_url }} 2600w, {{ 'basecamp-060a8529-edit-optimized_1basecamp-060a8529-edit-optimized.avif' | asset_url }} 3200w, {{ 'basecamp-060a8529-edit-optimized_1.avif' | asset_url }} 7365w" alt="" class="image-cover">
+            <div class="overlay-animation bg-secondary-light"></div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","about-header-section");</script>
+        
+{% schema %}
+{
+  "name": "About Header Section",
+  "tag": "div",
+  "class": "about-header-section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "about_p1",
+      "label": "about p1"
+    }
+  ]
+}
+{% endschema %}

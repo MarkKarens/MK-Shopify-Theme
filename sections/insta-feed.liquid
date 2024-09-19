@@ -1,0 +1,128 @@
+
+        <div class="container-default w-container">
+          <div class="text-center mg-bottom-64px">
+            <div class="sysf-tagline insta-feed-tagline">{{ section.settings.insta_feed_tagline }}</div>
+            <div class="inner-container _666px center">
+              <h2 class="heading-h1-size">{{ section.settings.insta_feed_title | newline_to_br }}</h2>
+            </div>
+          </div>
+          <div class="flex-horizontal vertical-mbp mg-bottom-64px">
+            <a id="w-node-ac366140-3b5d-ebe4-39b8-4113b65f0a15-b65f0a0a" href="https://www.instagram.com/" target="_blank" class="color-neutral-800 hover-color-accent-1 text-decoration-none w-inline-block">
+              <div class="flex-2 align-center gap-column-12px"><img option:img="insta feed account img" loading="eager" alt="" src="{{ 'profile-photo.png' | asset_url }}" class="logo-instagram">
+                <div class="flex-2 align-center gap-column-8px">
+                  <div class="text-200 bold">{{ 'tn6f4a0c71' | t }}</div>
+                </div>
+              </div>
+            </a>
+            <div class="divider-vertical horizontal-mbp"></div>
+            <div class="items-pro_buttons-wrap-2">
+              <div class="button-data_row-2">
+                <div class="button-data_content-2">
+                  <a data-w-id="542d97c5-e783-45a1-c2bd-5c74361b875f" href="https://instagram.com/mark.karens" class="button-block-35 alt is--dark w-inline-block">
+                    <div class="button-text-35">{{ 't7dc227d1' | t }}</div>
+                    <div class="button-icon-block-35">
+                      <div class="button-text-35-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" height=".75rem" viewBox="0 0 448 512"><!-- ! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.  -->
+                          <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor"></path>
+                        </svg></div>
+                      <div class="button-text-35-icon is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" height=".75rem" viewBox="0 0 448 512"><!-- ! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.  -->
+                          <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor"></path>
+                        </svg></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-2-columns _1-col-tablet gap-24px">
+            <a id="w-node-ac366140-3b5d-ebe4-39b8-4113b65f0a1f-b65f0a0a" href="{{ section.settings.insta_feed_url_1 }}" target="_blank" class="instagram-feed---image-wrapper height-auto w-inline-block">{%- if section.settings.insta_feed_img_1 == nil -%}<img loading="eager" alt="" src="{{ 'intro.avif' | asset_url }}" class="instagram-feed---image">{%- else -%}<img loading="eager" alt="{{ section.settings.insta_feed_img_1.alt | escape }}" src="{{ section.settings.insta_feed_img_1.src | img_url: 'master' }}" class="instagram-feed---image" srcset="{{ section.settings.insta_feed_img_1 | img_url: '1920x' }} 1920w,{{ section.settings.insta_feed_img_1 | img_url: '1600x' }} 1600w,{{ section.settings.insta_feed_img_1 | img_url: '1366x' }} 1366w,{{ section.settings.insta_feed_img_1 | img_url: '1024x' }} 1024w,{{ section.settings.insta_feed_img_1 | img_url: '768x' }} 768w,{{ section.settings.insta_feed_img_1 | img_url: '640x' }} 640w">{%- endif -%}</a>
+            <div id="w-node-ac366140-3b5d-ebe4-39b8-4113b65f0a23-b65f0a0a" class="grid-2-columns _2-col-mbl gap-24px">
+              <a href="{{ section.settings.insta_feed_url_2 }}" target="_blank" class="instagram-feed---image-wrapper w-inline-block"><img sizes="(max-width: 479px) 123px, (max-width: 767px) 20vw, (max-width: 991px) 48vw, 21vw" srcset="{{ 'featured-image-instagram-feeds-cloneable-template-p-500.png' | asset_url }} 500w, {{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }} 792w" alt="Placeholder Instagram - Instagram Feeds Cloneable Template" src="{{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }}" loading="eager" class="instagram-feed---image">
+                <div class="instagram-feed---image-overlay">{%- if section.settings.insta_feed_2 == nil -%}<img loading="eager" alt="Instagram - Brix Templates" src="{{ 'instagram-icon-white-brix-templates.svg' | asset_url }}" class="instagram-feed---icon-inside">{%- else -%}<img loading="eager" alt="{{ section.settings.insta_feed_2.alt | escape }}" src="{{ section.settings.insta_feed_2.src | img_url: 'master' }}" class="instagram-feed---icon-inside" srcset="{{ section.settings.insta_feed_2 | img_url: '1920x' }} 1920w,{{ section.settings.insta_feed_2 | img_url: '1600x' }} 1600w,{{ section.settings.insta_feed_2 | img_url: '1366x' }} 1366w,{{ section.settings.insta_feed_2 | img_url: '1024x' }} 1024w,{{ section.settings.insta_feed_2 | img_url: '768x' }} 768w,{{ section.settings.insta_feed_2 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              </a>
+              <a href="{{ section.settings.insta_feed_url_3 }}" target="_blank" class="instagram-feed---image-wrapper w-inline-block">{%- if section.settings.insta_feed_img_3 == nil -%}<img class="instagram-feed---image" src="{{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }}" alt="Placeholder Instagram - Instagram Feeds Cloneable Template" sizes="(max-width: 479px) 123px, (max-width: 767px) 20vw, (max-width: 991px) 48vw, 21vw" loading="eager" srcset="{{ 'featured-image-instagram-feeds-cloneable-template-p-500.png' | asset_url }} 500w, {{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }} 792w">{%- else -%}<img class="instagram-feed---image" src="{{ section.settings.insta_feed_img_3.src | img_url: 'master' }}" alt="{{ section.settings.insta_feed_img_3.alt | escape }}" loading="eager" srcset="{{ section.settings.insta_feed_img_3 | img_url: '1920x' }} 1920w,{{ section.settings.insta_feed_img_3 | img_url: '1600x' }} 1600w,{{ section.settings.insta_feed_img_3 | img_url: '1366x' }} 1366w,{{ section.settings.insta_feed_img_3 | img_url: '1024x' }} 1024w,{{ section.settings.insta_feed_img_3 | img_url: '768x' }} 768w,{{ section.settings.insta_feed_img_3 | img_url: '640x' }} 640w">{%- endif -%}
+                <div class="instagram-feed---image-overlay"><img loading="eager" src="{{ 'instagram-icon-white-brix-templates.svg' | asset_url }}" alt="Instagram - Brix Templates" class="instagram-feed---icon-inside"></div>
+              </a>
+              <a href="{{ section.settings.insta_feed_url_4 }}" target="_blank" class="instagram-feed---image-wrapper insta-img-4 w-inline-block">{%- if section.settings.insta_feed_img_4 == nil -%}<img class="instagram-feed---image" src="{{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }}" alt="Placeholder Instagram - Instagram Feeds Cloneable Template" sizes="(max-width: 479px) 123px, (max-width: 767px) 20vw, (max-width: 991px) 100vw, 21vw" loading="eager" srcset="{{ 'featured-image-instagram-feeds-cloneable-template-p-500.png' | asset_url }} 500w, {{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }} 792w">{%- else -%}<img class="instagram-feed---image" src="{{ section.settings.insta_feed_img_4.src | img_url: 'master' }}" alt="{{ section.settings.insta_feed_img_4.alt | escape }}" loading="eager" srcset="{{ section.settings.insta_feed_img_4 | img_url: '1920x' }} 1920w,{{ section.settings.insta_feed_img_4 | img_url: '1600x' }} 1600w,{{ section.settings.insta_feed_img_4 | img_url: '1366x' }} 1366w,{{ section.settings.insta_feed_img_4 | img_url: '1024x' }} 1024w,{{ section.settings.insta_feed_img_4 | img_url: '768x' }} 768w,{{ section.settings.insta_feed_img_4 | img_url: '640x' }} 640w">{%- endif -%}
+                <div class="instagram-feed---image-overlay"><img loading="eager" src="{{ 'instagram-icon-white-brix-templates.svg' | asset_url }}" alt="Instagram - Brix Templates" class="instagram-feed---icon-inside"></div>
+              </a>
+              <a href="{{ section.settings.insta_feed_url_5 }}" target="_blank" class="instagram-feed---image-wrapper insta-img-5 w-inline-block">{%- if section.settings.insta_feed_img_5 == nil -%}<img class="instagram-feed---image" src="{{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }}" alt="Placeholder Instagram - Instagram Feeds Cloneable Template" sizes="(max-width: 479px) 123px, (max-width: 767px) 20vw, (max-width: 991px) 100vw, 21vw" loading="eager" srcset="{{ 'featured-image-instagram-feeds-cloneable-template-p-500.png' | asset_url }} 500w, {{ 'featured-image-instagram-feeds-cloneable-template.png' | asset_url }} 792w">{%- else -%}<img class="instagram-feed---image" src="{{ section.settings.insta_feed_img_5.src | img_url: 'master' }}" alt="{{ section.settings.insta_feed_img_5.alt | escape }}" loading="eager" srcset="{{ section.settings.insta_feed_img_5 | img_url: '1920x' }} 1920w,{{ section.settings.insta_feed_img_5 | img_url: '1600x' }} 1600w,{{ section.settings.insta_feed_img_5 | img_url: '1366x' }} 1366w,{{ section.settings.insta_feed_img_5 | img_url: '1024x' }} 1024w,{{ section.settings.insta_feed_img_5 | img_url: '768x' }} 768w,{{ section.settings.insta_feed_img_5 | img_url: '640x' }} 640w">{%- endif -%}
+                <div class="instagram-feed---image-overlay"><img loading="eager" src="{{ 'instagram-icon-white-brix-templates.svg' | asset_url }}" alt="Instagram - Brix Templates" class="instagram-feed---icon-inside"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","insta-feed");</script>
+        
+{% schema %}
+{
+  "name": "Insta Feed",
+  "tag": "div",
+  "class": "insta-feed",
+  "settings": [
+    {
+      "type": "text",
+      "id": "insta_feed_tagline",
+      "label": "insta feed tagline",
+      "default": "Follow Us"
+    },
+    {
+      "type": "textarea",
+      "id": "insta_feed_title",
+      "label": "Insta feed title",
+      "default": "Find us on Instagram"
+    },
+    {
+      "type": "image_picker",
+      "id": "insta_feed_img_1",
+      "label": "insta feed img 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "insta_feed_2",
+      "label": "insta feed 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "insta_feed_img_3",
+      "label": "insta feed img 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "insta_feed_img_4",
+      "label": "insta feed img 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "insta_feed_img_5",
+      "label": "insta feed img 5"
+    },
+    {
+      "type": "url",
+      "id": "insta_feed_url_1",
+      "label": "insta feed url 1"
+    },
+    {
+      "type": "url",
+      "id": "insta_feed_url_2",
+      "label": "insta feed url 2"
+    },
+    {
+      "type": "url",
+      "id": "insta_feed_url_3",
+      "label": "insta feed url 3"
+    },
+    {
+      "type": "url",
+      "id": "insta_feed_url_4",
+      "label": "insta feed url 4"
+    },
+    {
+      "type": "url",
+      "id": "insta_feed_url_5",
+      "label": "insta feed url 5"
+    }
+  ]
+}
+{% endschema %}
