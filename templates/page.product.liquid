@@ -4,8 +4,9 @@
   {%- section 'navbar' -%}
   <div class="page-wrapper">
     <div class="main-page">
-      <div class="section-12">
-        {%- if settings.collection_product != blank -%}{%- render "markup_for_collection_product" -%}{%- else -%}{%- render "products_sorted_by_name" -%}{%- endif -%}
+      <div class="main-container collections-container">
+        {%- render 'all-products-header' -%}
+        {%- if settings.collection_product != blank -%}{%- render "markup_for_collection_product" -%}{%- else -%}{%- render "products_sorted_by_created_on_number_0" -%}{%- endif -%}
       </div>
     </div>
   </div>

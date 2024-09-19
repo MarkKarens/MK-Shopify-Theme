@@ -1,6 +1,8 @@
 {% capture listItems %}
-{% for item in collections[settings.collection_product].products limit: settings.collection_product_limit %}
-<div role="listitem" class="product-item w-dyn-item">
+{% paginate collections.all.products by 999 %}
+{%- assign allItems = collections.all.products -%}
+{%- for item in allItems  -%}
+                <div role="listitem" class="product-item w-dyn-item">
               <a data-w-id="82a98340-a579-4495-2bcc-9f08720d2758" href="{{ item.url }}" class="product-link-block w-inline-block"></a>
               <div class="product-card">
                 <a href="#" class="images-container relative w-inline-block">{{ item.url }}</a>
@@ -23,8 +25,10 @@
               </div>
             </div>
 {%- endfor -%}
+{% endpaginate %}
 {% endcapture %}
 {% assign items_length = listItems | strip | size %}
+
 <div class="product-list-wrapper w-dyn-list" udy-collection="product">
           {%- unless items_length == 0 -%}<div data-w-id="82a98340-a579-4495-2bcc-9f08720d2756" role="list" class="product-grid w-dyn-items">
             {{ listItems }}
