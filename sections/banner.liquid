@@ -1,0 +1,57 @@
+
+    <div class="container-regular">
+      <div class="banner-content">
+        <div class="banner-wrapper">
+          <div class="paragraph-small">{{ section.settings.banner_main_text | newline_to_br }}</div>
+        </div>
+        <div class="banner-detail-wrapper">
+          {%- if section.settings.show_badge -%}<a href="#" class="banner-button w-button">{{ section.settings.badge_text }}</a>{%- endif -%}
+          <div class="banner-divider"></div>
+          <div class="banner-language position-static">
+            <div data-hover="false" data-delay="0" class="w-dropdown">
+              <div class="banner-toggle w-dropdown-toggle">
+                <div class="caption">{{ 't8a9' | t }}</div>
+                <div class="icon-small w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M10.5832 5.99999L7.99657 8.58666L5.4099 5.99999C5.1499 5.73999 4.7299 5.73999 4.4699 5.99999C4.2099 6.25999 4.2099 6.67999 4.4699 6.93999L7.5299 9.99999C7.7899 10.26 8.2099 10.26 8.4699 9.99999L11.5299 6.93999C11.7899 6.67999 11.7899 6.25999 11.5299 5.99999C11.2699 5.74666 10.8432 5.73999 10.5832 5.99999Z" fill="currentColor"></path>
+                  </svg></div>
+              </div>
+              <nav class="banner-list w-dropdown-list">
+                <a href="#" class="banner-link w-dropdown-link">{{ 't8cc' | t }}</a>
+                <a href="#" class="banner-link w-dropdown-link">{{ 't8cc' | t }}</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("data-gsap","el.6");currentSection.setAttribute("option:checkbox","Show Banner");currentSection.setAttribute("li-section","announcement bar");currentSection.setAttribute("class","banner-section");</script>
+        
+{% schema %}
+{
+  "name": "Banner",
+  "tag": "section",
+  "class": "banner-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "badge text",
+      "default": "Shop Sale"
+    },
+    {
+      "type": "textarea",
+      "id": "banner_main_text",
+      "label": "Banner main text",
+      "default": "Mark Karen's Store Launch Sale - $200 off all products"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badge",
+      "label": "Show Badge",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

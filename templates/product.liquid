@@ -1,5 +1,6 @@
 {%- assign headerSnippetPath = "header-product" -%}{%- assign wfPage = "6655f8ec723faeae23c8641b" -%}{%- assign bodyClasses = "body-4" -%}
   {%- section 'banner-2-messages' -%}
+  {%- section 'banner' -%}
   {%- section 'contactsocial-bar' -%}
   {%- section 'navbar' -%}
   <div class="page-wrapper">
@@ -14,7 +15,7 @@
             <div class="breadcrumb-seperator w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 8L11 23.5885" stroke="currentColor" stroke-width="1.5"></path>
               </svg></div>
-            <a href="{{ pages["product"].url }}" class="breadcrumb-link-3 w-inline-block">
+            <a href="/product" class="breadcrumb-link-3 w-inline-block">
               <div option:url="breadcrumb 2" class="breadcrumb-link">All Products</div>
             </a>
             <div class="breadcrumb-seperator w-embed"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,6 +26,7 @@
             </a>
           </div>
           <div class="product-image" style="background-image: url('{{product.featured_image | img_url: 'master'}}')" data-commerce-type="variation-image"></div>
+          <p class="additional-product-info">{{ product.metafields.udesly['additional-info-1'] }}</p>
           <div class="w-layout-grid product-grid-2 product-info">
             <div id="w-node-_48820177-7fe4-2cb4-d825-15b088faceca-23c8641b" class="product-wrapper">
               <div class="wrap-v-regular">
