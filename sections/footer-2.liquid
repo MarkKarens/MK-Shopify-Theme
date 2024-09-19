@@ -32,7 +32,7 @@
               <div class="line-track-2"></div>
             </div>
           </a>
-          <a data-w-id="15f74d30-2810-4a0d-3401-d006d2530190" href="{{ pages["product"].url }}" class="button-6 btn-66 w-inline-block">
+          <a data-w-id="15f74d30-2810-4a0d-3401-d006d2530190" href="{{ section.settings.all_products_url }}" class="button-6 btn-66 w-inline-block">
             <div class="text-block-50">{{ 't24263543' | t }}</div>
             <div class="line-wrap-2">
               <div class="line-track-2"></div>
@@ -55,12 +55,12 @@
       <div id="w-node-bed76187-416e-cecb-3fb7-0a97bc1d1499-bc1d1486" class="mk-block-footer block-footer-2">
         <div class="footer-heading">{{ section.settings.footer_menu_2_title }}</div>
         <div class="feature-block-wrap is-button-wrap">
-          <a data-w-id="e53fbf87-1326-010b-578f-501dccdb26c0" href="{{ pages["about"].url }}" class="button-6 btn-65 w-inline-block">
+          {%- if section.settings.showhide_about_us_link -%}<a data-w-id="e53fbf87-1326-010b-578f-501dccdb26c0" href="{{ pages["about"].url }}" class="button-6 btn-65 w-inline-block">
             <div class="text-block-51">{{ 't645efc51' | t }}</div>
             <div class="line-wrap-2">
               <div class="line-track-2"></div>
             </div>
-          </a>
+          </a>{%- endif -%}
           <a data-w-id="e53fbf87-1326-010b-578f-501dccdb26c5" href="{{ pages["contact-us"].url }}" class="button-6 btn-66 w-inline-block">
             <div class="text-block-50">{{ 't7f2746de' | t }}</div>
             <div class="line-wrap-2">
@@ -131,6 +131,11 @@
     },
     {
       "type": "url",
+      "id": "all_products_url",
+      "label": "All products url"
+    },
+    {
+      "type": "url",
       "id": "addison_url",
       "label": "Addison URL"
     },
@@ -138,6 +143,12 @@
       "type": "url",
       "id": "bellamere_url",
       "label": "Bellamere URL"
+    },
+    {
+      "type": "checkbox",
+      "id": "showhide_about_us_link",
+      "label": "show/hide about us link",
+      "default": true
     }
   ]
 }

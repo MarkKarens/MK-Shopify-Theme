@@ -1,6 +1,8 @@
 {% capture listItems %}
-{% for item in collections[settings.collection_categories_template].products limit: settings.collection_categories_template_limit %}
-<div role="listitem" class="w-dyn-item">
+{% paginate collections.all.products by 999 %}
+{%- assign allItems = collections.all.products -%}
+{%- for item in allItems  -%}
+                <div role="listitem" class="w-dyn-item">
                   <div class="content-card-l">
                     <div class="content-top-detail">
                       <div class="paragraph-small-14 text-weight-bold">{{ item.metafields.udesly['selling-point'] }}</div>
@@ -29,8 +31,10 @@
                   </div>
                 </div>
 {%- endfor -%}
+{% endpaginate %}
 {% endcapture %}
 {% assign items_length = listItems | strip | size %}
+
 <div class="w-dyn-list" udy-collection="product">
               {%- unless items_length == 0 -%}<div role="list" class="collection-list-2 w-dyn-items">
                 {{ listItems }}
