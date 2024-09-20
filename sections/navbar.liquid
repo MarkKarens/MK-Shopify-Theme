@@ -12,9 +12,9 @@
           <a href="{{ routes.root_url }}" aria-current="page" class="brand-logo-wrap w-nav-brand w--current"><img width="68" height="Auto" alt="" src="{{ 'widerinitials-copy-2.svg' | asset_url }}" loading="lazy" class="brand-image"></a>
         </div>
         <div class="nav-center">
-          <a href="{{ section.settings.url_1 }}" class="nav-link">{{ section.settings.url_1_text }}</a>
-          <a href="{{ section.settings.url_2 }}" class="nav-link">{{ section.settings.url_2_text }}</a>
-          {%- if section.settings.show_link -%}<a href="{{ section.settings.url_3 }}" class="nav-link">{{ section.settings.url_3_text }}</a>{%- endif -%}
+          <a data-gsap="el.4" href="{{ section.settings.url_1 }}" class="nav-link">{{ section.settings.url_1_text }}</a>
+          <a data-gsap="el.4" href="{{ section.settings.url_2 }}" class="nav-link">{{ section.settings.url_2_text }}</a>
+          {%- if section.settings.show_link -%}<a data-gsap="el.4" href="{{ section.settings.url_3 }}" class="nav-link">{{ section.settings.url_3_text }}</a>{%- endif -%}
         </div>
         <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
           <div class="div-block-11">
@@ -127,7 +127,7 @@
     </div>
   
 
-<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("data-animation","over-left");currentSection.setAttribute("class","navbar w-nav");currentSection.setAttribute("data-easing2","ease-in-out");currentSection.setAttribute("data-easing","ease-in-out");currentSection.setAttribute("data-collapse","medium");currentSection.setAttribute("role","banner");currentSection.setAttribute("data-no-scroll","1");currentSection.setAttribute("data-duration","300");currentSection.setAttribute("data-gsap","el.6");</script>
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("data-animation","over-left");currentSection.setAttribute("class","navbar w-nav");currentSection.setAttribute("data-easing2","ease-in-out");currentSection.setAttribute("data-easing","ease-in-out");currentSection.setAttribute("data-collapse","medium");currentSection.setAttribute("role","banner");currentSection.setAttribute("data-no-scroll","1");currentSection.setAttribute("data-duration","300");</script>
         
 {% schema %}
 {
