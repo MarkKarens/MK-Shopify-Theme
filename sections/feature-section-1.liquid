@@ -35,11 +35,11 @@
                 {%- if section.settings.stain_3 == nil -%}<div class="card card6-content">
                   <div class="tagline-3 white-hero-tagline">{{ section.settings.stain_tagline_3 }}</div>
                   <h3 class="card-headline-2 card-headline-small">{{ section.settings.stain_title_3 }}</h3>
-                  <a href="{{ section.settings.stains_url }}" class="button-5 default-button card-cta w-button">{{ section.settings.stains_url_text }}</a>
+                  {%- if section.settings.showhide_button -%}<a href="{{ section.settings.stains_url }}" class="button-5 default-button card-cta w-button">{{ section.settings.stains_url_text }}</a>{%- endif -%}
                 </div>{%- else -%}<div class="card card6-content" style="background-image: url('{{ section.settings.stain_3.src | img_url: 'master' }}');">
                   <div class="tagline-3 white-hero-tagline">{{ section.settings.stain_tagline_3 }}</div>
                   <h3 class="card-headline-2 card-headline-small">{{ section.settings.stain_title_3 }}</h3>
-                  <a href="{{ section.settings.stains_url }}" class="button-5 default-button card-cta w-button">{{ section.settings.stains_url_text }}</a>
+                  {%- if section.settings.showhide_button -%}<a href="{{ section.settings.stains_url }}" class="button-5 default-button card-cta w-button">{{ section.settings.stains_url_text }}</a>{%- endif -%}
                 </div>{%- endif -%}
               </div>
             </div>
@@ -134,6 +134,12 @@
       "id": "stains_url_text",
       "label": "Stains URL Text",
       "default": "Explore"
+    },
+    {
+      "type": "checkbox",
+      "id": "showhide_button",
+      "label": "Show/Hide button",
+      "default": true
     }
   ]
 }
