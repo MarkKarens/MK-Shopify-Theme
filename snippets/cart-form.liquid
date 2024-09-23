@@ -1,0 +1,33 @@
+<div class="form-block-2 w-form">
+        <form id="wf-form-Cart" name="wf-form-Cart" data-name="Cart" method="post" class="cart-form" data-wf-page-id="66f16d212cd77c4a008165f0" data-wf-element-id="3d4f28f6-4c82-8e48-84ac-2a907604e8ed" action="{{ routes.cart_url }}">
+          <div class="cart-items">
+            <p class="paragraph-73">{{ 'tn2183a5ae' | t }}</p>
+            {%- for item in cart.items -%}<div class="cart-item">
+              <a href="{{ item.url }}" class="w-inline-block"><img src="{{ item.image | img_url: 'master' }}" loading="lazy" width="300" alt="{{ item.image.alt }}" class="image-11"></a>
+              <div class="div-block-35">
+                <a href="{{ item.url }}" class="w-inline-block">
+                  <p class="paragraph-74">{{ item.title }}</p>
+                </a>
+                <a href="/cart/change?line={{ forloop.index }}&amp;amp;quantity=0" class="link-2">{{ 'tn6e501b5c' | t }}</a>
+                <div class="text-block-56">{{ item.final_line_price | money_with_currency }}</div>
+              </div>
+            </div>{%- endfor -%}
+          </div>
+          <div class="cart-footer">
+            <div id="w-node-_3d4f28f6-4c82-8e48-84ac-2a907604e8ff-7604e8ec" class="cart-totals">
+              <div class="cart-lines">
+                <div class="cart-line">
+                  <div>{{ 'tn677f446a' | t }}</div>
+                  <div>{{ cart.original_total_price | money_with_currency }}</div>
+                </div>
+                <div class="cart-line">
+                  <div>{{ 'tn692decb8' | t }}</div>
+                  <div>{{ cart.total_discount | money_with_currency }}</div>
+                </div>
+              </div><input type="submit" data-wait="Please wait..." class="button-primary w-button" value="{{ 't51040653' | t }}" name="checkout">
+            </div>
+          </div>
+        </form>
+        
+        
+      </div>
