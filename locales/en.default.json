@@ -28,6 +28,7 @@
   "t1ecc508a": "Addison",
   "t4471b269": "Bellamere",
   "t7f2746de": "Contact Us",
+  "t4d0482d7": "Shipping & Returns",
   "tn3fbde6f6": "Privacy Policy",
   "tn7fe2d65b": "Terms of Service",
   "t22eaf12e": "Accessibility",
@@ -145,6 +146,17 @@
   "tn2183a5ae": "Items in your Cart",
   "tn677f446a": "Subtotal:",
   "tn692decb8": "Discounts:",
+  "tn77041945": "Shipping & Returns Policy",
+  "t2500d66": "Shipping Costs:",
+  "t1c89d463": " Shipping costs are calculated at checkout based on the delivery address and size of the items ordered. In some cases, additional charges may apply for remote locations or special delivery requirements.",
+  "t45faab3d": "Return Eligibility:",
+  "t3fc1089c": " We accept returns within 30 days of delivery for unused, undamaged items. Custom or personalized items are not eligible for return unless defective.",
+  "t123d449b": "Return Process:",
+  "t2e44b292": " To initiate a return, please contact our customer service team at ",
+  "t69e25296": "Return Shipping Costs:",
+  "t1ba6bc69": " Return shipping costs are the responsibility of the customer unless the return is due to a defect or an error on our part.",
+  "tn2657ac41": "Refunds:",
+  "tn48bfd320": " Once your return is received and inspected, we will notify you of the approval or rejection of your refund. Approved refunds will be processed within 4-10 business days and will be credited to your original method of payment.",
   "general": {
     "accessibility": {
       "unit_price_separator": "per"

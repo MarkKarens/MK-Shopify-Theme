@@ -1424,7 +1424,7 @@ figure {
 }
 
 .page-wrapper.wrapper-policies {
-  height: 70vh;
+  height: auto;
 }
 
 .page-wrapper.cart-page-wrapper {
@@ -1708,6 +1708,10 @@ figure {
 
 .body-text-n-reg {
   letter-spacing: .1px;
+  align-self: flex-start;
+  width: 50%;
+  margin-top: 100px;
+  padding-left: 30px;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -2494,6 +2498,7 @@ figure {
 .overlay-animation.bg-secondary-light {
   background-color: var(--secondary-light);
   max-height: 800px;
+  display: none;
 }
 
 .brand-logo-wrap.w--current {
@@ -2576,7 +2581,16 @@ figure {
 }
 
 .about-image-wrap {
+  background-image: url({{'hero_new1.webp' | asset_url }});
+  background-position: 0 0;
+  background-size: cover;
   border-radius: 4px;
+  justify-content: flex-end;
+  align-items: center;
+  height: 600px;
+  padding-left: 59px;
+  padding-right: 59px;
+  display: flex;
   position: relative;
   overflow: hidden;
 }
@@ -4197,8 +4211,13 @@ figure {
   max-height: none;
 }
 
-.heading-17, .heading-18, .heading-19, .heading-20, .heading-21, .heading-22, .heading-23 {
+.heading-17, .heading-18, .heading-19, .heading-20, .heading-21, .heading-22 {
   font-family: Raleway Variablefont Wght, sans-serif;
+}
+
+.heading-23 {
+  font-family: Raleway Variablefont Wght, sans-serif;
+  font-weight: 700;
 }
 
 .field-label-9 {
@@ -8032,6 +8051,20 @@ figure {
     background-color: var(--secondary);
   }
 
+  .no-bottom-margins {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-9 {
+    display: flex;
+  }
+
+  .col.lg-6.md-3.xs-2 {
+    justify-content: center;
+    align-items: center;
+  }
+
   .paragraph-regular-10 {
     font-family: Montserrat, sans-serif;
   }
@@ -8293,6 +8326,15 @@ figure {
 
   .div-block-13 {
     max-width: 1216px;
+  }
+
+  .wrapper-2 {
+    display: flex;
+  }
+
+  .no-bottom-margins {
+    justify-content: center;
+    align-items: center;
   }
 
   .section-9 {
@@ -9147,6 +9189,11 @@ figure {
     display: grid;
   }
 
+  .div-block-25 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .icon-6 {
     width: 25px;
     height: 25px;
@@ -9700,6 +9747,11 @@ figure {
   .payment-logo.custom-logo {
     width: 60px;
     height: 30px;
+  }
+
+  .div-block-25 {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .form-container {
@@ -11042,8 +11094,7 @@ figure {
   }
 
   .div-block-25 {
-    height: 900px;
-    padding: 100px 40px 40px;
+    padding: 40px;
   }
 
   .paragraph-10 {
