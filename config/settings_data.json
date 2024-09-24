@@ -30,7 +30,7 @@
           "url_2_text": "Bellamere",
           "url_3": "shopify://pages/about",
           "url_3_text": "About Us",
-          "show_link": false
+          "show_link": true
         }
       },
       "hero-section": {
