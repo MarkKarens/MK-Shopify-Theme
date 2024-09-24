@@ -37,7 +37,7 @@
         "type": "hero-section",
         "settings": {
           "hero_tagline": "You both deserve",
-          "hero_p": "Customizable, Hand Crafted & Made to order.",
+          "hero_p": "Customizable, Hand Crafted \n& Made to order.",
           "cta_link": "shopify://collections/all-products",
           "cta_link_text": "Shop Now",
           "secondary_url": "",
@@ -76,12 +76,12 @@
       "bellamere-section": {
         "type": "bellamere-section",
         "settings": {
-          "bellamere_info_1": "For crate trained pets",
-          "bellamere_info_2": "Make it yours",
-          "bellamere_info_3": "Built to order",
-          "bellamere_info_p_1": "It's time to upgrade the wire crate to something that can seamlessly blend into your home.",
-          "bellamere_info_p_2": "Customize with multiple sizes, stain options & more. Each size has 242 unique combinations!",
-          "bellamere_info_p_3": "Each Mark Karen's furniture piece is meticulously crafted to order. Ensuring quality every time."
+          "bellamere_info_1": "Quality Materials",
+          "bellamere_info_2": "Customizable",
+          "bellamere_info_3": "Easy to Clean",
+          "bellamere_info_p_1": "Our designs are made with solid Eastern White Pine wood (Pet Safe). No cheap press board or fake wood here!",
+          "bellamere_info_p_2": "Choose the perfect SIZE and STAIN to match your dog and your room.",
+          "bellamere_info_p_3": "We know that pets make a mess! Which is why we installed laminate flooring for easy cleaning!"
         }
       },
       "text-section": {
@@ -182,6 +182,17 @@
         "settings": {
           "contact_bar_message": "Currently only delivering to Southern Ontario, Canada",
           "contact_email": "hello@markkarens.com"
+        }
+      },
+      "selling-points-1": {
+        "type": "selling-points-1",
+        "settings": {
+          "selling_point_text_1": "Local Delivery Available",
+          "selling_point_subtext_1": "To London & Surrounding Area",
+          "selling_point_text_2": "3-4 week turn around",
+          "selling_point_subtext_2": "*Depending on customizations",
+          "selling_point_1_showhide": true,
+          "selling_point_2_showhide": true
         }
       }
     },
