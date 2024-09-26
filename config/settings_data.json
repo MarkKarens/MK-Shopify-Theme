@@ -260,7 +260,8 @@
     "custom_css": [
       ".gpo-app, .gpo-app .gpo-input, .gpo-app .gpo-input::placeholder, .gpo-app .gpo-select select {background-color: #f8f8fa;}",
       ".gpo-app .gpo-label,.gpo-app .gpo-label span.label-content,.gpo-app .gpo-label span.addOn,.gpo-app .gpo-label.required span.label-content::after {font-size: 24px;}",
-      "#dynamic-checkout-cart {margin-bottom: 20px;}"
+      "#dynamic-checkout-cart {margin-bottom: 20px;}",
+      ".Vtl-VolumeDiscountRadio__Name {background: none; margin: 30px 0 20px 0;}"
     ]
   }
 }
