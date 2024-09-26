@@ -9,8 +9,6 @@
 */
 {
   "current": {
-    "favicon": "shopify://shop_images/widerArtboard_1.png",
-    "apple_touch_icon": "shopify://shop_images/widerArtboard_1.png",
     "sections": {
       "banner-2-messages": {
         "type": "banner-2-messages",
