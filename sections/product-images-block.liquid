@@ -1,0 +1,31 @@
+
+                <div class="div-block-36">{%- if section.settings.product_img_1 == nil -%}<img loading="lazy" width="366" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="image-14">{%- else -%}<img loading="lazy" width="366" alt="{{ section.settings.product_img_1.alt | escape }}" src="{{ section.settings.product_img_1.src | img_url: 'master' }}" class="image-14" srcset="{{ section.settings.product_img_1 | img_url: '1920x' }} 1920w,{{ section.settings.product_img_1 | img_url: '1600x' }} 1600w,{{ section.settings.product_img_1 | img_url: '1366x' }} 1366w,{{ section.settings.product_img_1 | img_url: '1024x' }} 1024w,{{ section.settings.product_img_1 | img_url: '768x' }} 768w,{{ section.settings.product_img_1 | img_url: '640x' }} 640w">{%- endif -%}{%- if section.settings.product_img_2 == nil -%}<img loading="lazy" width="378" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="image-15">{%- else -%}<img loading="lazy" width="378" alt="{{ section.settings.product_img_2.alt | escape }}" src="{{ section.settings.product_img_2.src | img_url: 'master' }}" class="image-15" srcset="{{ section.settings.product_img_2 | img_url: '1920x' }} 1920w,{{ section.settings.product_img_2 | img_url: '1600x' }} 1600w,{{ section.settings.product_img_2 | img_url: '1366x' }} 1366w,{{ section.settings.product_img_2 | img_url: '1024x' }} 1024w,{{ section.settings.product_img_2 | img_url: '768x' }} 768w,{{ section.settings.product_img_2 | img_url: '640x' }} 640w">{%- endif -%}</div>
+                <div class="div-block-37">{%- if section.settings.product_img_3 == nil -%}<img loading="lazy" width="304" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="image-13">{%- else -%}<img loading="lazy" width="304" alt="{{ section.settings.product_img_3.alt | escape }}" src="{{ section.settings.product_img_3.src | img_url: 'master' }}" class="image-13" srcset="{{ section.settings.product_img_3 | img_url: '1920x' }} 1920w,{{ section.settings.product_img_3 | img_url: '1600x' }} 1600w,{{ section.settings.product_img_3 | img_url: '1366x' }} 1366w,{{ section.settings.product_img_3 | img_url: '1024x' }} 1024w,{{ section.settings.product_img_3 | img_url: '768x' }} 768w,{{ section.settings.product_img_3 | img_url: '640x' }} 640w">{%- endif -%}</div>
+              
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","w-layout-vflex flex-block");</script>
+        
+{% schema %}
+{
+  "name": "Product images block",
+  "tag": "div",
+  "class": "w-layout-vflex flex-block",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "product_img_1",
+      "label": "product img 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_img_2",
+      "label": "product img 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_img_3",
+      "label": "product img 3"
+    }
+  ]
+}
+{% endschema %}
