@@ -286,7 +286,8 @@
       "#dynamic-checkout-cart {margin-bottom: 20px;}",
       ".Vtl-VolumeDiscountRadio__Name {background: none; margin: 30px 0 20px 0; display: none;}",
       ".Vtl-ReviewsBadge {justify-content: left; flex-direction: row;}",
-      ".Vtl-ReviewsBadge {margin: 0;}"
+      ".Vtl-ReviewsBadge {margin: 0;}",
+      ".Vtl-ReviewsBadge__Score {padding: 4px; font-size: 16px;}"
     ]
   }
 }
