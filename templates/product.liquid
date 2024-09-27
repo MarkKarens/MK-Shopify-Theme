@@ -43,6 +43,9 @@
                   </div>{%- render 'wiremo-rating-widget' -%}
                 </div>
               </div>
+              <div class="product-info-block afterpay-box">
+                <div class="after-pay-embed w-embed"><afterpay-placement data-locale="en_CA" data-currency="CAD" data-min="200.00" data-max="2000.00" data-badge-theme="white-on-black"></afterpay-placement></div>
+              </div>
               <div class="div-block-24">
                 <div class="add-to-cart-2">
                   {%- form "product", product, data-node-type: "commerce-add-to-cart-form", class: "w-commerce-commerceaddtocartform default-state-3" -%}{%- unless product.has_only_default_variant or product.variants.size == 1 -%}<div data-node-type="add-to-cart-option-list" position-id="3eb80e8a-096f-6ccd-a84b-bf81bd02dc10">{%- for option in product.options_with_values -%}<fieldset data-node-type="add-to-cart-option" class="option-2" style="{% if product.has_only_default_variant or product.variants.size == 1 %}display: none; {% endif %}"><label data-node-type="add-to-cart-option-label">{{ option.name }}</label><select data-node-type="add-to-cart-option-select" class="size-select w-select" style="display: none;" name="{{ "option" | append: forloop.index }}">{%- render "product-options", option: option -%}</select><div data-node-type="add-to-cart-option-pill-group" class="w-commerce-commerceaddtocartoptionpillgroup" aria-label="{{ "option" | append: forloop.index  }}">{%- for value in option.values -%}<div data-node-type="add-to-cart-option-pill" class="size-btn w-commerce-commerceaddtocartoptionpill" data-option-name="{{ value | handle }}"><div data-node-type="block">{{ value }}</div></div>{%- endfor -%}</div></fieldset>{%- endfor -%}</div>{%- endunless -%}<input type="submit" position-id="3eb80e8a-096f-6ccd-a84b-bf81bd02dc1a" data-node-type="commerce-add-to-cart-button" data-loading-text="{{ 'tn60b63398' | t }}" aria-busy="false" aria-haspopup="dialog" class="w-commerce-commerceaddtocartbutton button-primary btn-product" value="{{ 'tn26bdceda' | t }}">
@@ -54,9 +57,6 @@
                   <div aria-live="assertive" data-node-type="commerce-add-to-cart-error" style="display:none" class="w-commerce-commerceaddtocarterror">
                     <div data-node-type="commerce-add-to-cart-error" data-w-add-to-cart-quantity-error="Product is not available in this quantity." data-w-add-to-cart-general-error="Something went wrong when adding this item to the cart." data-w-add-to-cart-mixed-cart-error="You can’t purchase another product with a subscription." data-w-add-to-cart-buy-now-error="Something went wrong when trying to purchase this item." data-w-add-to-cart-checkout-disabled-error="Checkout is disabled on this site." data-w-add-to-cart-select-all-options-error="Please select an option in each set.">{{ 'tn1c765d0d' | t }}</div>
                   </div>
-                </div>
-                <div class="product-info-block afterpay-box">
-                  <div class="after-pay-embed w-embed"><afterpay-placement data-locale="en_CA" data-currency="CAD" data-min="200.00" data-max="2000.00" data-badge-theme="white-on-black"></afterpay-placement></div>
                 </div>
                 <div class="logos-wrap">
                   <div id="w-node-_58bb9ba9-3249-5048-daac-1ba7faf50c32-23c8641b" class="logo-box white paypal"><img alt="" src="{{ 'paypal-black.svg' | asset_url }}" class="payment-logo"></div>
