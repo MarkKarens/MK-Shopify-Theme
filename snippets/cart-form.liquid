@@ -2,7 +2,6 @@
         <form id="wf-form-Cart" name="wf-form-Cart" data-name="Cart" method="post" class="cart-form" data-wf-page-id="66f16d212cd77c4a008165f0" data-wf-element-id="3d4f28f6-4c82-8e48-84ac-2a907604e8ed" action="{{ routes.cart_url }}">
           <div class="cart-items">
             <p class="paragraph-73">{{ 'tn2183a5ae' | t }}</p>
-            <p item="quanity" class="paragraph-73">{{ 't31' | t }}</p>
             {%- for item in cart.items -%}<div class="cart-item">
               <a href="{{ item.url }}" class="w-inline-block"><img src="{{ item.image | img_url: 'master' }}" loading="lazy" width="300" alt="{{ item.image.alt }}" class="image-11"></a>
               <div class="div-block-35">
