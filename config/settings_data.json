@@ -25,7 +25,7 @@
           "link_the_addison": "",
           "link_the_bellamere": "",
           "contact_email": "available for orders over $200",
-          "url_1": "shopify://products/addison",
+          "url_1": "shopify://products/addison-pet-home",
           "url_1_text": "Addison",
           "url_2": "shopify://products/bellamere-pet-home",
           "url_2_text": "Bellamere",
@@ -166,7 +166,7 @@
           "footer_social_url_1": "https://instagram.com/mark.karens",
           "footer_social_url_2": "https://www.facebook.com/mark.karens.furniture/",
           "all_products_url": "shopify://collections/all-products",
-          "addison_url": "shopify://products/addison",
+          "addison_url": "shopify://products/addison-pet-home",
           "bellamere_url": "shopify://products/bellamere-pet-home",
           "showhide_about_us_link": true
         }
