@@ -288,7 +288,8 @@
       ".Vtl-ReviewsBadge {justify-content: left; flex-direction: row;}",
       ".Vtl-ReviewsBadge {margin: 0;}",
       ".Vtl-ReviewsBadge__Score {padding: 4px; font-size: 16px;}",
-      ".Vtl-ReviewsBadge__Rating--Vertical {display: none;}"
+      ".Vtl-ReviewsBadge__Rating--Vertical {display: none;}",
+      ".vtl-rp-main-widget .vtl-product-card__title-inner, .vtl-rp-main-widget .vtl-product-card__price {font-family: ‘Montserrat’;}"
     ]
   }
 }
