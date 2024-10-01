@@ -9,6 +9,7 @@
 */
 {
   "current": {
+    "enable_product_rich_snippets": false,
     "sections": {
       "banner-2-messages": {
         "type": "banner-2-messages",
