@@ -105,7 +105,7 @@
           "feature_p": "We understand every living room is as unique as your pet companion! Pick the stains you think best suit your space and we will make your masterpiece!",
           "stains_url": "shopify://collections/all-products",
           "stains_url_text": "Explore",
-          "showhide_button": false
+          "showhide_button": true
         }
       },
       "feature-section-2": {
