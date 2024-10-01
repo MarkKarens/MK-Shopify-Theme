@@ -67,5 +67,11 @@ $(this).data("clicks", !clicks);
 });
 </script>
 {{ 'hero_new1.webp' | asset_url | stylesheet_tag }}
+<script src="https://cdn.unicorn.studio/v1.3.0/unicornStudio.umd.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    UnicornStudio.init()
+  });
+</script>
 {{
 'udesly-common.min.css' | asset_url | stylesheet_tag }}
