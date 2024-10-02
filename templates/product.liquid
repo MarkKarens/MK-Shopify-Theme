@@ -38,55 +38,55 @@
                 <div class="wrap-v-x-large">
                   {%- render 'product-faq-1' -%}
                   {%- render 'product-faq-2' -%}
-                  <div id="w-node-_14972102-b101-284e-cbbd-b432fac11392-23c8641b" class="klaviyo-discount">
-                    <div class="w-embed">
-                      <div class="klaviyo-form-UENUAY"></div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
             <div id="w-node-_48820177-7fe4-2cb4-d825-15b088facf1c-23c8641b" class="purchase-wrapper">
-              <div class="wrap-v-x-small">
-                <div class="product-price-wrapper">
-                  <div class="product-price">
-                    <h4 data-commerce-type="variation-price" looop="price" class="h3-heading">{{ product.price | money_with_currency }}</h4>
-                  </div>{%- render 'wiremo-rating-widget' -%}
-                </div>
+              <div class="div-block-40">
+                <div class="text-block-57">{{ 'tn244c3426' | t }}</div>
               </div>
-              <div class="product-info-block afterpay-box">
-                <div class="after-pay-embed w-embed"><afterpay-placement data-locale="en_CA" data-currency="CAD" data-min="200.00" data-max="2000.00" data-badge-theme="white-on-black"></afterpay-placement></div>
-              </div>
-              <div class="div-block-24">
-                <div class="add-to-cart-2">
-                  {%- form "product", product, data-node-type: "commerce-add-to-cart-form", class: "w-commerce-commerceaddtocartform default-state-3" -%}{%- unless product.has_only_default_variant or product.variants.size == 1 -%}<div data-node-type="add-to-cart-option-list" position-id="3eb80e8a-096f-6ccd-a84b-bf81bd02dc10">{%- for option in product.options_with_values -%}<fieldset data-node-type="add-to-cart-option" class="option-2" style="{% if product.has_only_default_variant or product.variants.size == 1 %}display: none; {% endif %}"><label data-node-type="add-to-cart-option-label">{{ option.name }}</label><select data-node-type="add-to-cart-option-select" class="size-select w-select" style="display: none;" name="{{ "option" | append: forloop.index }}">{%- render "product-options", option: option -%}</select><div data-node-type="add-to-cart-option-pill-group" class="w-commerce-commerceaddtocartoptionpillgroup" aria-label="{{ "option" | append: forloop.index  }}">{%- for value in option.values -%}<div data-node-type="add-to-cart-option-pill" class="size-btn w-commerce-commerceaddtocartoptionpill" data-option-name="{{ value | handle }}"><div data-node-type="block">{{ value }}</div></div>{%- endfor -%}</div></fieldset>{%- endfor -%}</div>{%- endunless -%}<input type="submit" position-id="3eb80e8a-096f-6ccd-a84b-bf81bd02dc1a" data-node-type="commerce-add-to-cart-button" data-loading-text="{{ 'tn60b63398' | t }}" aria-busy="false" aria-haspopup="dialog" class="w-commerce-commerceaddtocartbutton button-primary btn-product" value="{{ 'tn26bdceda' | t }}">
-                    <a position-id="3eb80e8a-096f-6ccd-a84b-bf81bd02dc1b" data-node-type="commerce-buy-now-button" data-default-text="Buy now" data-subscription-text="Subscribe now" aria-busy="false" aria-haspopup="false" class="w-commerce-commercebuynowbutton button-secondary buy-now-btn" href="/checkout">{{ 't71bb9a1c' | t }}</a>
-                  {%- render "product-variants-data-currency" product: product -%}{%- endform -%}
-                  <div style="display:none" class="w-commerce-commerceaddtocartoutofstock" tabindex="0">
-                    <div>{{ 't7aaa2dac' | t }}</div>
-                  </div>
-                  <div aria-live="assertive" data-node-type="commerce-add-to-cart-error" style="display:none" class="w-commerce-commerceaddtocarterror">
-                    <div data-node-type="commerce-add-to-cart-error" data-w-add-to-cart-quantity-error="Product is not available in this quantity." data-w-add-to-cart-general-error="Something went wrong when adding this item to the cart." data-w-add-to-cart-mixed-cart-error="You can’t purchase another product with a subscription." data-w-add-to-cart-buy-now-error="Something went wrong when trying to purchase this item." data-w-add-to-cart-checkout-disabled-error="Checkout is disabled on this site." data-w-add-to-cart-select-all-options-error="Please select an option in each set.">{{ 'tn1c765d0d' | t }}</div>
+              <div class="div-block-41">
+                <div class="wrap-v-x-small">
+                  <div class="product-price-wrapper">
+                    <div class="product-price">
+                      <h4 data-commerce-type="variation-price" looop="price" class="h3-heading">{{ product.price | money_with_currency }}</h4>
+                    </div>{%- render 'wiremo-rating-widget' -%}
                   </div>
                 </div>
-                <div class="logos-wrap">
-                  <div id="w-node-_58bb9ba9-3249-5048-daac-1ba7faf50c32-23c8641b" class="logo-box white paypal"><img alt="" src="{{ 'paypal-black.svg' | asset_url }}" class="payment-logo"></div>
-                  <div class="logo-box white"><img alt="" src="{{ 'master-black-proper.svg' | asset_url }}" class="payment-logo"></div>
-                  <div class="logo-box no-padding-box"><img alt="" src="{{ 'apple-pay.svg' | asset_url }}" class="payment-logo custom-logo"></div>
-                  <div class="logo-box no-padding-box"><img alt="" src="{{ 'google-pay-mark_800_gray.svg' | asset_url }}" class="payment-logo custom-logo"></div>
-                  <div class="logo-box white"><img alt="" src="{{ 'visa-black.svg' | asset_url }}" class="payment-logo"></div>
-                  <div class="logo-box white"><img alt="" src="{{ 'stripe-black.svg' | asset_url }}" class="payment-logo"></div>
+                <div class="product-info-block afterpay-box">
+                  <div class="after-pay-embed w-embed"><afterpay-placement data-locale="en_CA" data-currency="CAD" data-min="200.00" data-max="2000.00" data-badge-theme="white-on-black"></afterpay-placement></div>
                 </div>
-              </div>
-              <div class="product-info-block customization-block">
-                <div class="icon-x-small w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.3327 5.33335H11.3327V2.66669H1.99935C1.26602 2.66669 0.666016 3.26669 0.666016 4.00002V11.3334H1.99935C1.99935 12.44 2.89268 13.3334 3.99935 13.3334C5.10602 13.3334 5.99935 12.44 5.99935 11.3334H9.99935C9.99935 12.44 10.8927 13.3334 11.9993 13.3334C13.106 13.3334 13.9993 12.44 13.9993 11.3334H15.3327V8.00002L13.3327 5.33335ZM12.9993 6.33335L14.306 8.00002H11.3327V6.33335H12.9993ZM3.99935 12C3.63268 12 3.33268 11.7 3.33268 11.3334C3.33268 10.9667 3.63268 10.6667 3.99935 10.6667C4.36602 10.6667 4.66602 10.9667 4.66602 11.3334C4.66602 11.7 4.36602 12 3.99935 12ZM5.47935 10C5.11268 9.59335 4.59268 9.33335 3.99935 9.33335C3.40602 9.33335 2.88602 9.59335 2.51935 10H1.99935V4.00002H9.99935V10H5.47935ZM11.9993 12C11.6327 12 11.3327 11.7 11.3327 11.3334C11.3327 10.9667 11.6327 10.6667 11.9993 10.6667C12.366 10.6667 12.666 10.9667 12.666 11.3334C12.666 11.7 12.366 12 11.9993 12Z" fill="currentColor"></path>
-                  </svg></div>
-                <div class="sizing-grow">
-                  <div class="subheading-small">{{ 'tn3b8e0373' | t }}</div>
-                  <div class="caption-regular">{{ 't48df8347' | t }}</div>
+                <div class="div-block-24">
+                  <div class="add-to-cart-2">
+                    {%- form "product", product, data-node-type: "commerce-add-to-cart-form", class: "w-commerce-commerceaddtocartform default-state-3" -%}{%- unless product.has_only_default_variant or product.variants.size == 1 -%}<div data-node-type="add-to-cart-option-list" position-id="3eb80e8a-096f-6ccd-a84b-bf81bd02dc10">{%- for option in product.options_with_values -%}<fieldset data-node-type="add-to-cart-option" class="option-2" style="{% if product.has_only_default_variant or product.variants.size == 1 %}display: none; {% endif %}"><label data-node-type="add-to-cart-option-label">{{ option.name }}</label><select data-node-type="add-to-cart-option-select" class="size-select w-select" style="display: none;" name="{{ "option" | append: forloop.index }}">{%- render "product-options", option: option -%}</select><div data-node-type="add-to-cart-option-pill-group" class="w-commerce-commerceaddtocartoptionpillgroup" aria-label="{{ "option" | append: forloop.index  }}">{%- for value in option.values -%}<div data-node-type="add-to-cart-option-pill" class="size-btn w-commerce-commerceaddtocartoptionpill" data-option-name="{{ value | handle }}"><div data-node-type="block">{{ value }}</div></div>{%- endfor -%}</div></fieldset>{%- endfor -%}</div>{%- endunless -%}<input type="submit" position-id="3eb80e8a-096f-6ccd-a84b-bf81bd02dc1a" data-node-type="commerce-add-to-cart-button" data-loading-text="{{ 'tn60b63398' | t }}" aria-busy="false" aria-haspopup="dialog" class="w-commerce-commerceaddtocartbutton button-primary btn-product" value="{{ 'tn26bdceda' | t }}">
+                      <a position-id="3eb80e8a-096f-6ccd-a84b-bf81bd02dc1b" data-node-type="commerce-buy-now-button" data-default-text="Buy now" data-subscription-text="Subscribe now" aria-busy="false" aria-haspopup="false" class="w-commerce-commercebuynowbutton button-secondary buy-now-btn" href="/checkout">{{ 't71bb9a1c' | t }}</a>
+                    {%- render "product-variants-data-currency" product: product -%}{%- endform -%}
+                    <div style="display:none" class="w-commerce-commerceaddtocartoutofstock" tabindex="0">
+                      <div>{{ 't7aaa2dac' | t }}</div>
+                    </div>
+                    <div aria-live="assertive" data-node-type="commerce-add-to-cart-error" style="display:none" class="w-commerce-commerceaddtocarterror">
+                      <div data-node-type="commerce-add-to-cart-error" data-w-add-to-cart-quantity-error="Product is not available in this quantity." data-w-add-to-cart-general-error="Something went wrong when adding this item to the cart." data-w-add-to-cart-mixed-cart-error="You can’t purchase another product with a subscription." data-w-add-to-cart-buy-now-error="Something went wrong when trying to purchase this item." data-w-add-to-cart-checkout-disabled-error="Checkout is disabled on this site." data-w-add-to-cart-select-all-options-error="Please select an option in each set.">{{ 'tn1c765d0d' | t }}</div>
+                    </div>
+                  </div>
+                  <div class="logos-wrap">
+                    <div id="w-node-_58bb9ba9-3249-5048-daac-1ba7faf50c32-23c8641b" class="logo-box white paypal"><img alt="" src="{{ 'paypal-black.svg' | asset_url }}" class="payment-logo"></div>
+                    <div class="logo-box white"><img alt="" src="{{ 'master-black-proper.svg' | asset_url }}" class="payment-logo"></div>
+                    <div class="logo-box no-padding-box"><img alt="" src="{{ 'apple-pay.svg' | asset_url }}" class="payment-logo custom-logo"></div>
+                    <div class="logo-box no-padding-box"><img alt="" src="{{ 'google-pay-mark_800_gray.svg' | asset_url }}" class="payment-logo custom-logo"></div>
+                    <div class="logo-box white"><img alt="" src="{{ 'visa-black.svg' | asset_url }}" class="payment-logo"></div>
+                    <div class="logo-box white"><img alt="" src="{{ 'stripe-black.svg' | asset_url }}" class="payment-logo"></div>
+                  </div>
                 </div>
-                <a href="#" class="product-close-button w-inline-block"></a>
+                <div class="product-info-block customization-block">
+                  <div class="icon-x-small w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.3327 5.33335H11.3327V2.66669H1.99935C1.26602 2.66669 0.666016 3.26669 0.666016 4.00002V11.3334H1.99935C1.99935 12.44 2.89268 13.3334 3.99935 13.3334C5.10602 13.3334 5.99935 12.44 5.99935 11.3334H9.99935C9.99935 12.44 10.8927 13.3334 11.9993 13.3334C13.106 13.3334 13.9993 12.44 13.9993 11.3334H15.3327V8.00002L13.3327 5.33335ZM12.9993 6.33335L14.306 8.00002H11.3327V6.33335H12.9993ZM3.99935 12C3.63268 12 3.33268 11.7 3.33268 11.3334C3.33268 10.9667 3.63268 10.6667 3.99935 10.6667C4.36602 10.6667 4.66602 10.9667 4.66602 11.3334C4.66602 11.7 4.36602 12 3.99935 12ZM5.47935 10C5.11268 9.59335 4.59268 9.33335 3.99935 9.33335C3.40602 9.33335 2.88602 9.59335 2.51935 10H1.99935V4.00002H9.99935V10H5.47935ZM11.9993 12C11.6327 12 11.3327 11.7 11.3327 11.3334C11.3327 10.9667 11.6327 10.6667 11.9993 10.6667C12.366 10.6667 12.666 10.9667 12.666 11.3334C12.666 11.7 12.366 12 11.9993 12Z" fill="currentColor"></path>
+                    </svg></div>
+                  <div class="sizing-grow">
+                    <div class="subheading-small">{{ 'tn3b8e0373' | t }}</div>
+                    <div class="caption-regular">{{ 't48df8347' | t }}</div>
+                  </div>
+                  <a href="#" class="product-close-button w-inline-block"></a>
+                </div>
               </div>
             </div>
           </div>
