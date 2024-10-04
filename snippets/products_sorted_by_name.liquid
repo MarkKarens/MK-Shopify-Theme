@@ -1,0 +1,27 @@
+{% capture listItems %}
+{% paginate collections.all.products by 999 %}
+{%- assign allItems = collections.all.products -%}{%- assign allItems = allItems | sort: 'title' -%}
+{%- for item in allItems  -%}
+                <div role="listitem" class="w-dyn-item w-col w-col-4">
+                <div class="div-block-42">
+                  <a id="w-node-_7cf9a65c-46ca-71c9-ddfa-355e706888f7-23c86411" href="{{ item.url }}" class="w-inline-block"><img loading="lazy" id="w-node-_945f50ba-b354-a17c-ccdf-b85d88f8f1c5-23c86411" alt="{{ item.featured_image.alt }}" src="{{ item.featured_image | img_url: 'master' }}" data-commerce-type="variation-image" srcset="{{ item.featured_image | img_url: '1920x' }} 1920w,{{ item.featured_image | img_url: '1600x' }} 1600w,{{ item.featured_image | img_url: '1366x' }} 1366w,{{ item.featured_image | img_url: '1024x' }} 1024w,{{ item.featured_image | img_url: '768x' }} 768w,{{ item.featured_image | img_url: '640x' }} 640w"></a>
+                  <a id="w-node-_763c4326-d35f-2c6f-3c52-4fd3aed9ef1a-23c86411" href="{{ item.url }}" class="link-block-11 w-inline-block">
+                    <h3 id="w-node-_50c465db-4e97-fd1e-e6a4-b082f2ef622b-23c86411">{{ item.title }}</h3>
+                  </a>
+                  <div id="w-node-_834fb5b0-8173-ad16-a791-9f827286db2e-23c86411">{{ item.metafields.udesly['selling-point'] }}</div>
+                  <div data-commerce-type="variation-price" id="w-node-e7a0095f-8108-a09c-ca32-3aaa23386463-23c86411">{{ item.price | money_with_currency }}</div>
+                </div>
+              </div>
+{%- endfor -%}
+{% endpaginate %}
+{% endcapture %}
+{% assign items_length = listItems | strip | size %}
+
+<div class="collection-list-wrapper w-dyn-list" udy-collection="product">
+            {%- unless items_length == 0 -%}<div role="list" class="w-dyn-items w-row">
+              {{ listItems }}
+            </div>{%- endunless -%}
+            {%- if items_length == 0 -%}<div class="w-dyn-empty">
+              <div>No items found.</div>
+            </div>{%- endif -%}
+          </div>

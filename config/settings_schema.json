@@ -385,6 +385,20 @@
       },
       {
         "type": "collection",
+        "id": "collection_3_home",
+        "label": "Collection 3 Home"
+      },
+      {
+        "type": "range",
+        "id": "collection_3_home_limit",
+        "label": "Collection 3 Home limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
         "id": "collection_categories_template",
         "label": "Collection Categories Template"
       },
