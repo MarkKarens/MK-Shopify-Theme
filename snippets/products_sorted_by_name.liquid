@@ -1,6 +1,6 @@
 {% capture listItems %}
 {% paginate collections.all.products by 999 %}
-{%- assign allItems = collections.all.products -%}
+{%- assign allItems = collections.all.products -%}{%- assign allItems = allItems | sort: 'title' -%}
 {%- for item in allItems  -%}
                 <div role="listitem" class="w-dyn-item">
                   <div class="content-card-l">

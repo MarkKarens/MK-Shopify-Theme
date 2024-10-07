@@ -396,6 +396,20 @@
         "max": 50,
         "step": 1,
         "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_addison_landing_page",
+        "label": "Collection Addison Landing Page"
+      },
+      {
+        "type": "range",
+        "id": "collection_addison_landing_page_limit",
+        "label": "Collection Addison Landing Page limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
       }
     ]
   }

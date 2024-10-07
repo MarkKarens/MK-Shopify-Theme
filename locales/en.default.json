@@ -1,12 +1,3 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin language editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "t726": ": ",
   "tn6e501b5c": "Remove",
@@ -129,18 +120,6 @@
   "t463febf0": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and mockups.",
   "t7f2581fc": "Introducing",
   "tn10d26d54": "Shop Now",
-  "tn7c5c7f99": "FEATURES EXAMPLE",
-  "t5d367025": "We preferred—",
-  "tn4b432329": " over quantity.",
-  "tn4c6f718": "general",
-  "t54e90113": "landlords",
-  "tn5517d2f7": "tenants",
-  "tn44f1a548": "Buy, Sell, or Rent.",
-  "tn6796ae85": "Duis aute irure dolor in reprehenderit in vol up tate velit esse cillum dolore.",
-  "tn5f3c613b": "World-Class Partner",
-  "t2ea25227": "Communities",
-  "tn2e8b77cb": "Exclusive Properties",
-  "t28753d45": "Exclusive Deals",
   "tn2b2aff5d": "Stain options",
   "tn2c4e657d": "11 Stain Options",
   "tn640a2084": "All our woods are sustainably deforested and",
@@ -162,6 +141,7 @@
   "t1ba6bc69": " Return shipping costs are the responsibility of the customer unless the return is due to a defect or an error on our part.",
   "tn2657ac41": "Refunds:",
   "tn48bfd320": " Once your return is received and inspected, we will notify you of the approval or rejection of your refund. Approved refunds will be processed within 4-10 business days and will be credited to your original method of payment.",
+  "t60c0ce27": "By Mark Karen's",
   "general": {
     "accessibility": {
       "unit_price_separator": "per"
