@@ -31,14 +31,14 @@
                 </svg>
               </div>
             </a>
-            <a data-w-id="050851ae-638c-2d89-67e8-0a55b2bedcf2" href="/products/the-addison" class="nav-menu-list w-inline-block">
+            <a data-w-id="050851ae-638c-2d89-67e8-0a55b2bedcf2" href="{{ section.settings.addison_link }}" class="nav-menu-list w-inline-block">
               <div class="nav-menu-text nav-product">{{ 'tn4d2dac45' | t }}</div>
               <div class="icon-4 w-embed"><svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.0039 9.414L7.39691 18.021L5.98291 16.607L14.5889 8H7.00391V6H18.0039V17H16.0039V9.414V9.414Z" fill="currentColor"></path>
                 </svg>
               </div>
             </a>
-            <a data-w-id="2b6a5113-8a1d-8281-717d-e1fbb4643c0a" href="/products/the-bellamere" class="nav-menu-list w-inline-block">
+            <a data-w-id="2b6a5113-8a1d-8281-717d-e1fbb4643c0a" href="{{ section.settings.bellamere_link }}" class="nav-menu-list w-inline-block">
               <div class="nav-menu-text nav-product">{{ 'tn10fc52a6' | t }}</div>
               <div class="icon-4 w-embed"><svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.0039 9.414L7.39691 18.021L5.98291 16.607L14.5889 8H7.00391V6H18.0039V17H16.0039V9.414V9.414Z" fill="currentColor"></path>
@@ -179,6 +179,16 @@
       "id": "url_3_text",
       "label": "url 3 Text",
       "default": "About Us"
+    },
+    {
+      "type": "url",
+      "id": "addison_link",
+      "label": "Addison Link"
+    },
+    {
+      "type": "url",
+      "id": "bellamere_link",
+      "label": "Bellamere Link"
     },
     {
       "type": "checkbox",
